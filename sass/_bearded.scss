@@ -1,0 +1,98 @@
+$body-font-weight: 300;
+$body-font-color: #27313d;
+$header-font-color: $body-font-color;
+$header-font-weight: bold;
+$subheader-font-weight: 300;
+
+$paragraph-font-weight: 300;
+
+
+$green: #73ba5d;
+$blue: #00b4ff;
+$red: #fa565a;
+$gray: #7f8c8d;
+$turquoise: #00cd99;
+$navy :#00c3d2;
+$amethyst: #9f489e;
+$darkblue: #2e5fae;
+$darkred: #bf1e4b;
+$emerald: #2ecc71;
+$pink: #ea4c89;
+$sunflower: #f1c40f;
+$congo: #FF7878;
+$concrete: #95a5a6;
+$river: #6CBDC4;
+$brown: #976F46;
+$weed: #A1B73A;
+$orange: #f47e00;
+
+$theme-bg: #24292d;
+$theme-bg-alt: #2e3236;
+$theme-bg-alt2: #3a3f43;
+$theme-bg-alt3: #1b222b;
+
+$secondorange: #FF6908;
+
+$theme-color: $orange;
+$primary-color: $theme-color !default;
+
+$button-border-width: 0 !default;
+$button-border-style: none !default;
+
+$row-width: 67.5em !default;
+$row-width-small: 900px !default;
+$column-gutter: 2.857142857142857em !default;
+
+$button-tny: em-calc(9) !default;
+$button-sml: em-calc(12) !default;
+$button-med: em-calc(15) !default;
+$button-lrg: em-calc(18) !default;
+
+$block-grid-default-spacing: $column-gutter;
+
+$topbar-height: 70px;
+$topbar-bg: $theme-bg;
+$input-include-glowing-effect: false;
+$input-box-shadow: none;
+$topbar-link-font-size: 1em;
+
+$topbar-link-bg: $theme-bg-alt;
+$topbar-link-bg-hover: $theme-bg-alt2 !default;
+$topbar-link-bg-active: $theme-bg-alt2 !default;
+
+$microformat-border-width: 0;
+$microformat-border-style: none;
+$microformat-border-color: transparent;
+
+
+$blockquote-font-color: $body-font-color;
+$blockquote-border: none;
+$blockquote-padding: em-calc(9 29 0 49);
+$blockquote-cite-font-color: #888;
+$blockquote-cite-link-color: $blockquote-cite-font-color;
+
+$input-focus-border-color: $theme-color;
+$input-focus-bg-color: #fefefe !default;
+
+$microformat-fullname-font-size: 1.1428em;
+
+@mixin box-shadow($param){
+	box-shadow: $param;
+	-moz-box-shadow: $param;
+	-webkit-box-shadow: $param;
+}
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+     -moz-transform: translate($x, $y);
+      -ms-transform: translate($x, $y);
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+     -moz-transform: rotate($deg);
+      -ms-transform: rotate($deg);
+       -o-transform: rotate($deg);
+          transform: rotate($deg);
+}

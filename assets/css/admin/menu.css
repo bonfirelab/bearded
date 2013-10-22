@@ -1,0 +1,59 @@
+.cell {
+	width: 24px;
+	height: 24px;
+	background: #f3f3f3;
+	display: inline-block;
+	text-align: center;
+	line-height: 24px;
+	margin: 2px;
+	cursor: pointer;
+}
+.cell:hover {
+	background: #d0d0d0;
+}
+.cell.active {
+	background: #333;
+	color: #fff;
+}
+.cell i {
+	line-height: inherit;
+}
+
+#bearded-icon-modal .font-modal {
+	position: relative;
+	width: 700px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+}
+#bearded-icon-modal-overlay {
+	background-color: #000;
+}
+#bearded-icon-modal .close-popup {
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+#bearded-icon-modal .font-holder {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+#bearded-modal-loader {
+	background: url('../../images/loader.gif') no-repeat center center transparent;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+}
