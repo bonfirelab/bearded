@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bearded\n"
-"POT-Creation-Date: 2013-10-22 08:46+0700\n"
-"PO-Revision-Date: 2013-10-22 08:46+0700\n"
+"POT-Creation-Date: 2013-10-25 02:40+0700\n"
+"PO-Revision-Date: 2013-10-25 02:40+0700\n"
 "Last-Translator: \n"
 "Language-Team: Bonfirelab <hermanto@bonfirelab.com>\n"
 "Language: English\n"
@@ -21,59 +21,58 @@ msgstr ""
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:7
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:43
-msgid "Comments are closed."
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:25
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:18
 msgid "&larr; Previous"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:26
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:19
 #, php-format
 msgid "Page %1$s of %2$s"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:27
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:20
 msgid "Next &rarr;"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:37
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:30
 #, php-format
 msgid ""
 "Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
 "\">trackbacks</a> and pingbacks are open."
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:50
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:36
+msgid "Comments are closed."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:43
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:51
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:44
 #, php-format
 msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
 "this account\">Log out &raquo;</a>"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:54
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:47
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:202
 msgid "Leave a Reply"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:55
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:48
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:203
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:56
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:49
 msgid "Cancel Reply"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:57
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:50
 msgid "Submit Comment"
 msgstr ""
 
@@ -132,10 +131,6 @@ msgstr ""
 msgid "[entry-terms taxonomy=\"portfolio\" before=\"Posted in \"]"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/content-slider.php:3
-msgid "Read More"
-msgstr ""
-
 #: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:6
 #: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:7
 #, php-format
@@ -157,52 +152,52 @@ msgid ""
 "link]."
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:238
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:243
 msgctxt "sidebar"
 msgid "Footer 1"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:242
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:247
 msgctxt "sidebar"
 msgid "Footer 2"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:246
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:251
 msgctxt "sidebar"
 msgid "Footer 3"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:262
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:267
 msgctxt "sidebar"
 msgid "Home Page"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:388
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:395
 msgid "Permalink to: "
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:668
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:679
 msgid "Client:"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:674
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:685
 msgid "Date:"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:892
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:903
 msgid "Project <abbr title=\"Uniform Resource Locator\">URL</abbr>:"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:908
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:919
 msgid "Primary Color"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:938
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:949
 #, php-format
 msgid "View all posts filed under %s"
 msgstr ""
 
-#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:953
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:964
 #, php-format
 msgid "Feed for all posts filed under %s"
 msgstr ""
@@ -322,110 +317,6 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:227
 msgid "Use Icon"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:76
-msgid "Sliders"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:77
-msgid "Slider"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:78
-msgid "Add New"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:79
-msgid "Add New Slider"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:80
-msgid "Edit Slider"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:81
-msgid "New Slider"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:82
-msgid "All Sliders"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:83
-msgid "View Slider"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:84
-msgid "Search Sliders"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:85
-msgid "No Slider Found"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:86
-msgid "No slider found in Trash"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:87
-msgid "Featured Slider"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:107
-msgid "Slider Options"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:115
-msgid "Link:"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:119
-msgid "Button Label:"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:124
-msgid "Caption Position:"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:126
-msgid "Left"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:127
-msgid "Right"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:128
-msgid "Center"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:133
-msgid "Caption Style:"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:135
-msgid "Light"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:136
-msgid "Dark"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:148
-msgid "Thumbnail:"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:150
-msgid "Choose Image"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:152
-msgid "Remove Image"
-msgstr ""
-
-#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-featured-slider.php:153
-msgid "Thumbnail / image for the slide. For background set the featured image."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:23

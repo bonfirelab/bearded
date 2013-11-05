@@ -26,7 +26,6 @@
 
 		<?php endif; ?>
 
-
 		<?php get_template_part( 'loop-nav' ); // Loads the loop-nav.php template. ?>
 
 	</div><!-- #content -->

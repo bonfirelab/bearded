@@ -75,7 +75,7 @@ class Bearded_Custom_Nav_Menu {
 	*/
 	function edit_walker($walker,$menu_id) {
 	
-	    return 'Walker_Nav_Menu_Edit_Custom';
+	    return 'Bearded_Walker_Nav_Menu_Edit_Custom';
 	    
 	}
 

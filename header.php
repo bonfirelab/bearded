@@ -20,12 +20,10 @@
 
 			<hgroup id="branding">
 				<h1 id="site-title" role="logo">
-					<a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+					<a href="<?php echo trailingslashit( esc_url( home_url() ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
 						<?php if ( get_theme_mod( 'bearded_logo' ) ) : ?>
 					        <img src="<?php echo esc_url( get_theme_mod( 'bearded_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" />
-						<?php else : ?>
-					    	<img src="<?php echo  trailingslashit( BEARDED_IMAGES ) . 'logo.png' ?>" alt="<?php bloginfo( 'name' ); ?>" />
-						<?php endif; ?>
+						<?php else : bloginfo( 'name' ); endif; ?>
 					</a>
 				</h1>
 				<h2 id="site-description" class="hide-for-small"><?php bloginfo( 'description' ); ?></h2>
@@ -38,7 +36,7 @@
 
 		<?php 
 			if(is_page_template( 'page-templates/home.php' ) || is_front_page() ) {
-				get_template_part('loop', 'slider');
+				bearded_featured_slider();
 			}
 		?>
 		

@@ -8,7 +8,7 @@
  * @since 3.0.0
  * @uses Walker_Nav_Menu
  */
-class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
+class Bearded_Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
 	
 	/**
 	 * @see Walker::start_el()
