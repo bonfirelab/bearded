@@ -58,13 +58,20 @@ To use the slider.
 
 == Change Log ==
 
-= 1.0 =
+= 0.1.0 =
 * Initial Release
 
-= 1.0.1 =
+= 0.1.2 =
 * Fixed the Theme description in style.css file
 * Remove Included Custom Post Type
 
-= 1.0.2 =
+= 0.1.3 =
 * Added License for included resources
 * Fix Unprefixed Issue
+
+= 1.0.0 =
+* Major Update in theme function
+* Fixed Strict error issue
+* Added Woocommerce
+* Fixed Footer Issue
+* Fixed Social Google Plus Issue
