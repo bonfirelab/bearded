@@ -20,7 +20,7 @@
  *
  * @package    Bearded
  * @subpackage Functions
- * @version    0.1.3
+ * @version    1.0.0
  * @since      0.1.0
  * @author     Hermanto Lim <hermanto@bonfirelab.com>
  * @copyright  Copyright (c) 2013, Hermanto Lim
@@ -1017,7 +1017,7 @@ function bearded_wp_head_shadow_css() {
 }
 
 class Portfolio_Walker extends Walker_Category {
-    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+    function start_el( &$output, $category, $depth = 0, $args = array(), $id = 0 ) {
             extract($args);
             $cat_name = esc_attr( $category->name );
             $cat_name = apply_filters( 'list_cats', $cat_name, $category );
@@ -1100,7 +1100,7 @@ function bearded_featured_slider() {
 function bearded_footer_content( $content ) {
 	$footer = hybrid_get_setting( 'footer_insert' );
 	if( !empty( $footer ) ) {
-		return '<p class="credit">' . esc_html__( $footer, 'bearded' ) . '</p>';
+		return '<p class="credit">' . esc_html( $footer, 'bearded' ) . '</p>';
 	} else {
 		return $content;
 	}
