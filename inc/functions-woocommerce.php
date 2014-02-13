@@ -105,12 +105,12 @@ function bearded_woocommerce_nav() {
     <nav class="shop-nav">
         <ul class="account-menu">
             <?php if ( is_user_logged_in() ) { ?> 
-            <li class="my-account <?php echo ( $post->ID == wc_get_page_id('myaccount') && !array_key_exists( get_option( 'woocommerce_myaccount_edit_account_endpoint'), $wp->query_vars) ) ? 'active' : ''; ?>">
+            <li class="my-account <?php echo ( !empty($post) && $post->ID == wc_get_page_id('myaccount') && !array_key_exists( get_option( 'woocommerce_myaccount_edit_account_endpoint'), $wp->query_vars) ) ? 'active' : ''; ?>">
                 <a class="tiptip icon-user" title="<?php _e('My Account','bearded'); ?>" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>">
                     <span class="link-title"><?php _e('My Account','bearded'); ?></span>
                 </a>
             </li>
-            <li class="edit-account <?php echo ( $post->ID == wc_get_page_id('myaccount') && array_key_exists( get_option( 'woocommerce_myaccount_edit_account_endpoint'), $wp->query_vars) ) ? 'active' : '';?>">
+            <li class="edit-account <?php echo ( !empty($post) && $post->ID == wc_get_page_id('myaccount') && array_key_exists( get_option( 'woocommerce_myaccount_edit_account_endpoint'), $wp->query_vars) ) ? 'active' : '';?>">
                 <a class="tiptip icon-pencil" title="<?php _e('Edit Account','bearded'); ?>" href="<?php echo wc_customer_edit_account_url(); ?>">
                     <span class="link-title"><?php _e('Edit Account','bearded'); ?></span>
                 </a>
@@ -121,7 +121,7 @@ function bearded_woocommerce_nav() {
                 </a>
             </li>
             <?php if ($yith_wcwl) { ?>
-            <li class="wishlist <?php echo ( $post->ID == get_option( 'yith_wcwl_wishlist_page_id' ) ) ? 'active' : '';?>">
+            <li class="wishlist <?php echo ( !empty($post) && $post->ID == get_option( 'yith_wcwl_wishlist_page_id' ) ) ? 'active' : '';?>">
                 <a class="tiptip icon-magic" title="<?php _e('View Wishlist','bearded'); ?>" href="<?php echo $yith_wcwl->get_wishlist_url(); ?>">
                     <span class="link-title"><?php _e('View Wishlist','bearded'); ?></span>
                 </a>
@@ -138,12 +138,12 @@ function bearded_woocommerce_nav() {
                     <span class="link-title"><?php _e('Visit Shop','bearded'); ?></span>
                 </a>
             </li>
-            <li class="login <?php echo ( $post->ID == wc_get_page_id('myaccount') && !array_key_exists( get_option( 'woocommerce_myaccount_lost_password_endpoint' ) , $wp->query_vars) ) ? 'active' : '';?>">
+            <li class="login <?php echo ( !empty($post) && $post->ID == wc_get_page_id('myaccount') && !array_key_exists( get_option( 'woocommerce_myaccount_lost_password_endpoint' ) , $wp->query_vars) ) ? 'active' : '';?>">
                 <a class="tiptip icon-signin" title="<?php _e('Login','bearded'); ?>" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>">
                     <span class="link-title"><?php _e('Login','bearded'); ?></span>
                 </a>
             </li>
-            <li class="lost-password <?php echo ( $post->ID == wc_get_page_id('myaccount') && array_key_exists( get_option( 'woocommerce_myaccount_lost_password_endpoint' ), $wp->query_vars) ) ? 'active' : '';?>">
+            <li class="lost-password <?php echo ( !empty($post) && $post->ID == wc_get_page_id('myaccount') && array_key_exists( get_option( 'woocommerce_myaccount_lost_password_endpoint' ), $wp->query_vars) ) ? 'active' : '';?>">
                 <a class="tiptip icon-key" title="<?php _e('Lost Password','bearded'); ?>" href="<?php echo wc_lostpassword_url(); ?>">
                     <span class="link-title"><?php _e('Lost Password','bearded'); ?></span>
                 </a>
