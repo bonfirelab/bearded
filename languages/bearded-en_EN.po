@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bearded\n"
 "POT-Creation-Date: 2013-10-25 02:40+0700\n"
-"PO-Revision-Date: 2014-01-09 13:38+0100\n"
-"Last-Translator: Pierre-Yves Dubreucq <pydubreucq@admin-linux.org>\n"
+"PO-Revision-Date: 2014-01-29 21:30+0700\n"
+"Last-Translator: \n"
 "Language-Team: Bonfirelab <hermanto@bonfirelab.com>\n"
 "Language: English\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_html_e;esc_html__;_x;_n;_x:1,2c;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_html_e;esc_html__;_x;_n;_x:1,2c;"
+"_n:1,2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -18,58 +19,62 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comment.php:34
 msgid "Your comment is awaiting moderation."
-msgstr "Votre commentaire est en cours de modération"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:18
 msgid "&larr; Previous"
-msgstr "&larr; Précédent"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:19
 #, php-format
 msgid "Page %1$s of %2$s"
-msgstr "Page %1$s de %2$s"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:20
 msgid "Next &rarr;"
-msgstr "Prochain &rarr;"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:30
 #, php-format
-msgid "Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post\">trackbacks</a> and pingbacks are open."
-msgstr "Les commentaires sont clos, mais les <a href=\"%s\" title=\"Trackback URL for this post\">trackbacks</a> et pingbacks sont ouvert."
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:36
 msgid "Comments are closed."
-msgstr "Commentaires clos."
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:43
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "Vous devez être <a href=\"%s\">authentifié in</a> pour poster un commentaire."
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:44
 #, php-format
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out &raquo;</a>"
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:47
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:202
 msgid "Leave a Reply"
-msgstr "Laisser une réponse"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:48
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:203
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "Laisser une réponse à %s"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:49
 msgid "Cancel Reply"
-msgstr "Annuler la réponse"
+msgstr "SWT"
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:50
 msgid "Submit Comment"
-msgstr "Soumettre un commentaire"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-aside.php:12
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-aside.php:26
@@ -98,7 +103,7 @@ msgstr "Soumettre un commentaire"
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content.php:13
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content.php:31
 msgid "Pages:"
-msgstr "Pages :"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-aside.php:16
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-attachment.php:16
@@ -111,14 +116,16 @@ msgstr "Pages :"
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-status.php:17
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-video.php:16
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content.php:17
-msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"Tagged \"]"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-audio.php:38
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-chat.php:37
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-quote.php:23
 msgid "Read more &rarr;"
-msgstr "Lire plus &rarr;"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/content-portfolio_item.php:17
 msgid "[entry-terms taxonomy=\"portfolio\" before=\"Posted in \"]"
@@ -128,7 +135,7 @@ msgstr ""
 #: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:7
 #, php-format
 msgid "Posted by: %1$s"
-msgstr "Créer par : %1$s"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:44
 #, php-format
@@ -137,11 +144,13 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:67
 msgid "Client: "
-msgstr "Client : "
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/footer.php:46
-msgid "Copyright &copy; [the-year] [site-link]. Powered by [wp-link] and [theme-link]."
-msgstr "Copyright &copy; [the-year] [site-link]. Propulsé par [wp-link] et [theme-link]."
+msgid ""
+"Copyright &copy; [the-year] [site-link]. Powered by [wp-link] and [theme-"
+"link]."
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:243
 msgctxt "sidebar"
@@ -165,15 +174,15 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:395
 msgid "Permalink to: "
-msgstr "Permalien vers :"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:679
 msgid "Client:"
-msgstr "Client :"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:685
 msgid "Date:"
-msgstr "Date :"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:903
 msgid "Project <abbr title=\"Uniform Resource Locator\">URL</abbr>:"
@@ -181,7 +190,7 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:919
 msgid "Primary Color"
-msgstr "Couleur primaire"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:949
 #, php-format
@@ -208,12 +217,12 @@ msgstr ""
 #: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:14
 #: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:16
 msgid "Previous"
-msgstr "Précédent"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:14
 #: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:16
 msgid "Next"
-msgstr "Suivant"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/searchform.php:6
 msgid "Enter search terms..."
@@ -222,7 +231,7 @@ msgstr ""
 #: C:\wamp\www\wp3\wp-content\themes\bearded/searchform.php:9
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:45
 msgid "Search"
-msgstr "Rechercher"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:61
 #, php-format
@@ -249,7 +258,7 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:115
 msgid "URL"
-msgstr "URL"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:122
 msgid "Navigation Label"
@@ -257,11 +266,11 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:128
 msgid "Title Attribute"
-msgstr "Attribut du titre"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:135
 msgid "Open link in a new window/tab"
-msgstr "Ouvrir le lien dans une nouvelle fenêtre/tabulation"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:140
 msgid "CSS Classes (optional)"
@@ -273,54 +282,56 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:152
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:154
-msgid "The description will be displayed in the menu if the current theme supports it."
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:162
 msgid "Menu Icon"
-msgstr "Icône di menu"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:165
 msgid "Choose Icon"
-msgstr "Choisir une icône"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:171
 msgid "Remove icon"
-msgstr "Retirer l'icône"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:179
 #, php-format
 msgid "Original: %s"
-msgstr "Original : %s"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:192
 msgid "Remove"
-msgstr "Retirer"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:193
 msgid "Cancel"
-msgstr "Annuler"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:227
 msgid "Use Icon"
-msgstr "Utiliser l'icône"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:23
 msgid "Social Settings"
-msgstr "Paramètres de réseaux sociaux"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:62
 #, php-format
 msgid "%1$s URL"
-msgstr "%1$s URL"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:86
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:94
 msgid "Logo"
-msgstr "Logo"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:36
 msgid "Show Clients lists. Best use in homepage widget."
@@ -335,20 +346,20 @@ msgstr ""
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-posts.php:138
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:155
 msgid "Title"
-msgstr "Titre"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:130
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:112
 msgid "Link to:"
-msgstr "Lien vers :"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:135
 msgid "Link Title:"
-msgstr "Titre du lien :"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:140
 msgid "Image URL:"
-msgstr "URL de l'image :"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:36
 msgid "Show Call to Action. Best use in homepage widget."
@@ -365,7 +376,7 @@ msgstr ""
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:122
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:178
 msgid "Content"
-msgstr "Contenu"
+msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-posts.php:36
 msgid "Show Latest Blog Posts. Best use in homepage widget."
@@ -404,7 +415,8 @@ msgid "Icon URL"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:167
-msgid "Custom URL for the icon. If filled this will be used instead of icon class."
+msgid ""
+"Custom URL for the icon. If filled this will be used instead of icon class."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:171
@@ -462,7 +474,10 @@ msgid "Footer settings"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-footer.php:52
-msgid "You can add custom <acronym title=\"Hypertext Markup Language\">HTML</acronym> and/or shortcodes, which will be automatically inserted into your theme."
+msgid ""
+"You can add custom <acronym title=\"Hypertext Markup Language\">HTML</"
+"acronym> and/or shortcodes, which will be automatically inserted into your "
+"theme."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/theme-settings.php:47
@@ -488,7 +503,9 @@ msgid "Support"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:32
-msgid "An advanced widget that gives you total control over the output of your archives."
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"archives."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:44
@@ -535,7 +552,9 @@ msgid "Show post count?"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:32
-msgid "An advanced widget that gives you total control over the output of your author lists."
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"author lists."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:44
@@ -561,7 +580,9 @@ msgid "Hide empty?"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:32
-msgid "An advanced widget that gives you total control over the output of your bookmarks (links)."
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"bookmarks (links)."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:44
@@ -602,7 +623,9 @@ msgid "Show private?"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-calendar.php:32
-msgid "An advanced widget that gives you total control over the output of your calendar."
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"calendar."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-calendar.php:44
@@ -614,7 +637,9 @@ msgid "One-letter abbreviation?"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:32
-msgid "An advanced widget that gives you total control over the output of your category links."
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"category links."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:44
@@ -635,7 +660,9 @@ msgid "Show count?"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-nav-menu.php:32
-msgid "An advanced widget that gives you total control over the output of your menus."
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"menus."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-nav-menu.php:44
@@ -643,7 +670,9 @@ msgid "Navigation Menu"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-pages.php:32
-msgid "An advanced widget that gives you total control over the output of your page links."
+msgid ""
+"An advanced widget that gives you total control over the output of your page "
+"links."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-pages.php:44
@@ -651,7 +680,9 @@ msgid "Pages"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:33
-msgid "An advanced widget that gives you total control over the output of your search form."
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"search form."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:148
@@ -671,7 +702,8 @@ msgid "Use theme's <code>searchform.php</code>?"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-tags.php:32
-msgid "An advanced widget that gives you total control over the output of your tags."
+msgid ""
+"An advanced widget that gives you total control over the output of your tags."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-tags.php:44
@@ -843,7 +875,9 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:196
 #, php-format
-msgid "You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a comment."
+msgid ""
+"You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a "
+"comment."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:197
@@ -906,7 +940,9 @@ msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/deprecated.php:684
 #, php-format
-msgid "<code>%1$s</code> &mdash; This function has been removed or replaced by another function."
+msgid ""
+"<code>%1$s</code> &mdash; This function has been removed or replaced by "
+"another function."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/menus.php:38
@@ -1041,7 +1077,9 @@ msgid "Secondary"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:92
-msgid "The second most important widget area, most often used as a secondary sidebar."
+msgid ""
+"The second most important widget area, most often used as a secondary "
+"sidebar."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:95
@@ -1086,7 +1124,9 @@ msgid "After Singular"
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:112
-msgid "Loaded on singular post (page, attachment, etc.) views before the comments area."
+msgid ""
+"Loaded on singular post (page, attachment, etc.) views before the comments "
+"area."
 msgstr ""
 
 #: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/utility.php:197
@@ -1097,4 +1137,3 @@ msgstr ""
 #: C:\wamp\www\wp3\wp-content\themes\bearded/page-templates/portfolio-4.php:20
 msgid "All"
 msgstr ""
-

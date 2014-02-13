@@ -146,8 +146,6 @@ function bearded_theme_setup() {
 
 	add_action( 'init', 'bearded_image_size' );
 
-	/* Handle content width for embeds and images. */
-	hybrid_set_content_width( 1160 );
 
 	add_action( 'widgets_init', 'bearded_footer_sidebar', 50);
 
@@ -177,7 +175,6 @@ function bearded_theme_setup() {
 
 	add_action( 'template_redirect', 'bearded_set_column' );
 
-
 	add_action( "{$prefix}_open_main_row", "bearded_open_main_row_hook", 1 );
 
 	add_action( "{$prefix}_close_main_row", "bearded_close_main_row_hook", 1 );
@@ -186,7 +183,17 @@ function bearded_theme_setup() {
 
 	add_action( 'wp_head', 'bearded_wp_head_shadow_css' );
 
+	add_filter( "{$prefix}_footer_content", "bearded_footer_content" );
+
+	if( function_exists( 'is_woocommerce') ) {
+		require_once( BEARDED_INC . 'functions-woocommerce.php');
+		require_once( BEARDED_INC . 'widgets/widget-home-product.php');
+	}
+
+	add_action('init', 'bearded_setup_admin_bar');
+
 }
+
 
 /**
  * Set up image size for bearded
@@ -267,9 +274,18 @@ function bearded_footer_sidebar() {
 		'name' => _x( 'Home Page', 'sidebar', 'bearded' ),
 	);
 
+	$shop_sidebar = array(
+		'id' => 'shop',
+		'name' => _x( 'Shop', 'sidebar', 'bearded'),
+		'before_title'  => '<h3 class="widget-title"><span>',
+		'after_title' => '</span></h3>'
+	);
+
 	$home_sidebar = wp_parse_args( $home_sidebar, $defaults );
+	$shop_sidebar = wp_parse_args( $shop_sidebar, $defaults );
 
 	register_sidebar($home_sidebar);
+	register_sidebar($shop_sidebar);
 	
 	/* Parse the sidebar arguments and defaults. */
 	for( $i = 1; $i <= 3; $i++ ) {
@@ -303,7 +319,18 @@ function bearded_enqueue_scripts() {
 		wp_enqueue_script( 'custom', BEARDED_JS . 'custom.js' , array('jquery'), '0.1', true );
 
 		wp_enqueue_style( 'font-awesome', BEARDED_CSS . 'font-awesome.css' , '', '3.0', 'all'  );
+
+		$params = array(
+			'i18n_add_wishlist' => esc_attr__( 'Add to wishlist', 'bearded' ),
+			'i18n_exists_wishlist' => esc_attr__( 'Product already in the wishlist', 'bearded' ),
+			'i18n_added_wishlist' => esc_attr__( 'Product added to wishlist', 'bearded' ),
+		);
+
+		wp_localize_script( 'custom', 'bearded_woocommerce', apply_filters( 'bearded_woocommerce', $params ) );
+
 	}
+
+
 }
 add_action('wp_enqueue_scripts', 'bearded_enqueue_scripts');
 
@@ -378,7 +405,7 @@ function bearded_get_social_lists() {
 		'pinterest' => esc_url( hybrid_get_setting('bearded_social_pinterest') ),
 		'dribbble' => esc_url( hybrid_get_setting('bearded_social_dribbble') ),
 		'github' => esc_url( hybrid_get_setting('bearded_social_github') ),
-		'google-plus' => esc_url( hybrid_get_setting('bearded_social_google') ),
+		'google-plus' => esc_url( hybrid_get_setting('bearded_social_google-plus') ),
 		'tumblr' => esc_url( hybrid_get_setting('bearded_social_tumblr') ),
 		'linkedin' => esc_url( hybrid_get_setting('bearded_social_linkedin') ),
 	);
@@ -397,7 +424,7 @@ function bearded_get_social_lists() {
  */
 function bearded_get_post_format_icon( $format = '' ) {
 	global $post;
-		$o = '<a href="' . get_permalink( $post->ID ) . '" title="' . the_title_attribute( array( 'before', __( 'Permalink to: ','bearded' ), 'echo' => false ) ).'">';
+		$o = '<a href="' . get_post_format_link( $format ) . '" title="' . sprintf( __( 'Browse %s posts','bearded' ), $format ) .'">';
 
 		switch ($format) {
 
@@ -770,8 +797,10 @@ function bearded_disable_sidebars( $sidebars_widgets ) {
 
 	$customize = ( is_object( $wp_customize ) && $wp_customize->is_preview() ) ? true : false;
 
-	if ( (!is_admin() && !$customize && '1c' == get_theme_mod( 'theme_layout' )) || is_page_template( 'page-templates/home.php' ) )
+	if ( (!is_admin() && !$customize && '1c' == get_theme_mod( 'theme_layout' )) || is_page_template( 'page-templates/home.php' ) ) {
 		$sidebars_widgets['primary'] = false;
+		$sidebars_widgets['shop'] = false;
+	}	
 
 	return $sidebars_widgets;
 }
@@ -786,7 +815,17 @@ function bearded_disable_sidebars( $sidebars_widgets ) {
  */
 function bearded_set_column() {
 
-	if ( !is_active_sidebar( 'primary' ) && !is_active_sidebar( 'secondary' ) ) {
+
+	if( function_exists('is_woocommerce') && is_woocommerce() && !is_active_sidebar('shop') ) {
+		add_filter( 'theme_mod_theme_layout', 'bearded_theme_layout_one_column' );
+	} 
+	elseif( ( function_exists( 'is_cart' ) && is_cart() ) ||  ( function_exists( 'is_checkout' ) && is_checkout() ) ) {
+		add_filter( 'theme_mod_theme_layout', 'bearded_theme_layout_one_column' );
+	}
+	elseif( function_exists( 'is_account_page') && is_account_page() && !is_active_sidebar('shop') ) {
+		add_filter( 'theme_mod_theme_layout', 'bearded_theme_layout_one_column' );
+	}
+	elseif ( !is_active_sidebar( 'primary' ) && !is_active_sidebar( 'secondary' ) ) {
 		add_filter( 'theme_mod_theme_layout', 'bearded_theme_layout_one_column' );
 	}
 	elseif ( is_attachment() && wp_attachment_is_image() ) {
@@ -798,7 +837,28 @@ function bearded_set_column() {
 	elseif ( is_singular() && 'default' === get_post_layout( get_queried_object_id() ) ) {
 		add_filter( 'theme_mod_theme_layout', 'bearded_theme_layout_default_column' );
 	}
+	elseif( function_exists( 'is_woocommerce' ) && is_woocommerce() ) {
+		add_filter( 'theme_mod_theme_layout', 'bearded_woocommerce_column' );
+	}
+	
+}
 
+/**
+ * Filters custom woocommerce page.
+ *
+ * @since  0.1.4
+ * @return boolean
+ */
+function bearded_is_woopage() {
+	if( ( function_exists( 'is_cart' ) && is_cart() ) || ( function_exists( 'is_checkout' ) && is_checkout() ) || ( function_exists( 'is_account_page' ) && is_account_page() ) ) {
+		return true;
+	}
+}
+
+function bearded_woocommerce_column() {
+
+	$layout = get_post_layout( wc_get_page_id( 'shop' ) );
+	return $layout;
 }
 
 /**
@@ -829,12 +889,13 @@ function bearded_theme_layout_default_column( $layout ) {
  */
 function bearded_embed_defaults( $args ) {
 
+	$args['width'] = 570;
+
 	if ( current_theme_supports( 'theme-layouts' ) && '1c' == get_theme_mod( 'theme_layout' ) )
 		$args['width'] = 930;
 
 	return $args;
 }
-
 
 /**
  * Output the featured image post thumbnail base on layout size and post format.
@@ -875,7 +936,13 @@ function bearded_open_main_row_hook() {
 		$layout = get_post_layout(get_queried_object_id());
 	}
 	if($layout == '2c-r' ) {
-		get_sidebar( 'primary' );
+
+		if( function_exists('is_woocommerce') && !is_woocommerce() && !bearded_is_woopage() ) {
+			get_sidebar( 'primary' );
+		} else {
+			get_sidebar( 'shop' );
+		}
+		
 	}
 }
 
@@ -887,8 +954,13 @@ function bearded_close_main_row_hook() {
 		
 		$layout = get_post_layout(get_queried_object_id());
 	}
-	if($layout == '2c-l' ) {
-		get_sidebar( 'primary' );
+	if($layout == '2c-l' || $layout == 'default') {
+
+		if( function_exists('is_woocommerce') && !is_woocommerce() && !bearded_is_woopage() ) {
+			get_sidebar( 'primary' );
+		} else {
+			get_sidebar( 'shop' );
+		}
 	}
 }
 
@@ -929,8 +1001,8 @@ function bearded_register_colors( $color_palette ) {
 	$color_palette->add_rule_set(
 		'primary',
 		array(
-			'color'               => 'a,.entry-title a:hover,.blog .format-link .entry-link:hover, .archive .format-link .entry-link:hover, .taxonomy .format-link .entry-link:hover,.page-links a:hover,.loop-pagination .page-numbers:hover, .loop-pagination .page-numbers.current,.sidebar ul li a:hover,.sidebar ul li.recentcomments a:hover,.sidebar .widget_calendar table tbody td a, .sidebar .widget-calendar table tbody td a,#comments ol.comment-list .comment-author a:hover,#footer a:hover, #main-home .widget-entry-title h3 a:hover,.page-template-portfolio-4 .portfolio-entry-title a:hover, .page-template-portfolio-3 .portfolio-entry-title a:hover,#isotope-filters li a:hover, #isotope-filters li a.active',
-			'background-color'    => 'button, .button, button.disabled, button[disabled], .button.disabled, .button[disabled],button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus,#navigation #menu-toggle:hover,.bearded-carousel-control .bx-prev:hover, .bearded-carousel-control .bx-next:hover,.hentry .entry-side .comment-count a,.hentry .entry-side .entry-client time:hover, .hentry .entry-side .entry-client a:hover, .hentry .entry-side .entry-client span:hover, .hentry .entry-side .entry-edit time:hover, .hentry .entry-side .entry-edit a:hover, .hentry .entry-side .entry-edit span:hover, .hentry .entry-side .entry-published time:hover, .hentry .entry-side .entry-published a:hover, .hentry .entry-side .entry-published span:hover, .hentry .entry-side .entry-format time:hover, .hentry .entry-side .entry-format a:hover, .hentry .entry-side .entry-format span:hover,.sidebar ul li.recentcomments a.url:hover,.sidebar .tagcloud a:hover, .sidebar .widget-tags a:hover,.sidebar .widget_calendar table caption, .sidebar .widget-calendar table caption,#footer .footer-social li a:hover,#main-home .services-icon',
+			'color'               => '.shop-nav ul.cart > li .widget ul li a:hover, .shop-nav ul.account-menu li a:hover, .shop-nav ul.account-menu li a:focus, .added_to_cart:hover, .added_to_cart:focus, ul.products .hentry .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a:hover, ul.products .hentry .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a:focus,.add_to_cart_button.button:hover, .product_type_variable.button:hover, ul.products .hentry .product-details h3 a:hover, a,.entry-title a:hover,.blog .format-link .entry-link:hover, .archive .format-link .entry-link:hover, .taxonomy .format-link .entry-link:hover,.page-links a:hover,.loop-pagination .page-numbers:hover, .loop-pagination .page-numbers.current,.woocommerce-pagination .page-numbers:hover, .woocommerce-pagination .page-numbers.current,.sidebar ul li a:hover,.sidebar ul li.recentcomments a:hover,.sidebar .widget_calendar table tbody td a, .sidebar .widget-calendar table tbody td a,#comments ol.comment-list .comment-author a:hover,#footer a:hover, #main-home .widget-entry-title h3 a:hover,.page-template-portfolio-4 .portfolio-entry-title a:hover, .page-template-portfolio-3 .portfolio-entry-title a:hover,#isotope-filters li a:hover, #isotope-filters li a.active',
+			'background-color'    => '.shop-nav ul.cart > li.cart-container a.cart-button:hover, .pp_inline #respond p.stars a.active, .pp_inline #respond p.stars a:hover, .pp_inline #respond p.stars a:focus, #respond input[type="submit"], #reviews #review_form p.stars a.active, #reviews #review_form p.stars a:hover, #reviews #review_form p.stars a:focus, .shop-nav ul.account-menu li.active a, #reviews .add_review .button:hover, ul.products .hentry .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a, ul.products .hentry .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a, button, .button, button.disabled, button[disabled], .button.disabled, .button[disabled],button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus,#navigation #menu-toggle:hover,.bearded-carousel-control .bx-prev:hover, .bearded-carousel-control .bx-next:hover,.hentry .entry-side .comment-count a,.hentry .entry-side .entry-client time:hover, .hentry .entry-side .entry-client a:hover, .hentry .entry-side .entry-client span:hover, .hentry .entry-side .entry-edit time:hover, .hentry .entry-side .entry-edit a:hover, .hentry .entry-side .entry-edit span:hover, .hentry .entry-side .entry-published time:hover, .hentry .entry-side .entry-published a:hover, .hentry .entry-side .entry-published span:hover, .hentry .entry-side .entry-format time:hover, .hentry .entry-side .entry-format a:hover, .hentry .entry-side .entry-format span:hover,.sidebar ul li.recentcomments a.url:hover,.sidebar .tagcloud a:hover, .sidebar .widget-tags a:hover,.sidebar .widget_calendar table caption, .sidebar .widget-calendar table caption,#footer .footer-social li a:hover,#main-home .services-icon',
 			'border-left-color'   => '#navigation #menu-primary ul li > ul:before',
 			'border-bottom-color' => '#navigation #menu-primary ul:before',
 			'border-color'		  => 'input[type="text"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="time"]:focus,input[type="url"]:focus,textarea:focus, .sidebar .widget_calendar table caption, .sidebar .widget-calendar table caption'
@@ -940,11 +1012,11 @@ function bearded_register_colors( $color_palette ) {
 
 function bearded_wp_head_shadow_css() {
 	$hex = get_theme_mod( 'color_palette_primary' );
-	echo '<style>#navigation #menu-primary ul { box-shadow: 0 4px 0 #'.$hex.' inset !important; -moz-box-shadow: 0 4px 0 #'.$hex.' inset !important; -webkit-box-shadow: 0 4px 0 #'.$hex.' inset  !important; } #navigation #menu-primary ul li > ul { box-shadow: 4px 0 0 #'.$hex.' !important; -moz-box-shadow: 4px 0 0 #'.$hex.' !important; -webkit-box-shadow: 4px 0 0 #'.$hex.' !important;}</style>';
+	echo '<style>.shop-nav ul.cart > li.cart-container a.cart-button:hover .contents { background-color: #'.bearded_color_mod( $hex, 'darker', '5' ).' } .shop-nav ul.cart > li.cart-container a.cart-button .contents { background-color: #'.bearded_color_mod( $hex, 'darker', '2' ).'} a:hover, a:focus { color: #'.bearded_color_mod( $hex, 'darker', '2' ).'} #navigation #menu-primary ul { box-shadow: 0 4px 0 #'.$hex.' inset !important; -moz-box-shadow: 0 4px 0 #'.$hex.' inset !important; -webkit-box-shadow: 0 4px 0 #'.$hex.' inset  !important; } @media only screen and (min-width: 768px){ #navigation #menu-primary ul li > ul.sub-menu { box-shadow: 4px 0 0 #'.$hex.' !important; -moz-box-shadow: 4px 0 0 #'.$hex.' !important; -webkit-box-shadow: 4px 0 0 #'.$hex.' !important;} }</style>';
 }
 
 class Portfolio_Walker extends Walker_Category {
-    function start_el(&$output, $category, $depth, $args) {
+    function start_el(&$output, $category, $depth, $args, $id = 0) {
             extract($args);
             $cat_name = esc_attr( $category->name );
             $cat_name = apply_filters( 'list_cats', $cat_name, $category );
@@ -1011,7 +1083,6 @@ class Portfolio_Walker extends Walker_Category {
     }
 }
 
-
 function bearded_as_bg_size($size) {
 	return 'featured-slider';
 }
@@ -1022,6 +1093,71 @@ function bearded_featured_slider() {
 	include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 	if( is_plugin_active( 'animate-slider/animate-slider.php' ) ) {
 		echo apply_atomic_shortcode('featured_slider', '[as-slider]');
+	}
+}
+
+function bearded_footer_content( $content ) {
+	$footer = hybrid_get_setting( 'footer_insert' );
+	if( !empty( $footer ) ) {
+		return '<p class="credit">' . esc_html__( $footer, 'bearded' ) . '</p>';
+	} else {
+		return $content;
+	}
+}
+
+function bearded_color_mod($color, $shade, $amount) {
+		//remove # from the begiining if available and make sure that it gets appended again at the end if it was found
+		$newcolor = "";
+		$prepend = "";
+		if(strpos($color,'#') !== false) 
+		{ 
+			$prepend = "#";
+			$color = substr($color, 1, strlen($color)); 
+		}
+		
+		//iterate over each character and increment or decrement it based on the passed settings
+		$nr = 0;
+	while (isset($color[$nr])) 
+	{
+		$char = strtolower($color[$nr]);
+		
+		for($i = $amount; $i > 0; $i--)
+		{
+			if($shade == 'lighter')
+			{
+				switch($char)
+				{
+					case 9: $char = 'a'; break;
+					case 'f': $char = 'f'; break;
+					default: $char++;
+				}
+			}
+			else if($shade == 'darker')
+			{
+				switch($char)
+				{
+					case 'a': $char = '9'; break;
+					case '0': $char = '0'; break;
+					default: $char = chr(ord($char) - 1 );
+				}
+			}
+		}
+		$nr ++;
+		$newcolor.= $char;
+	}
+		
+	$newcolor = $prepend.$newcolor;
+	return $newcolor;
+}
+
+/**
+ * @since 1.0
+ * Show admin bar only for role above subscriber
+ *
+ */
+function bearded_setup_admin_bar() {
+	if (!current_user_can('delete_posts') ) {
+	  show_admin_bar(false);
 	}
 }
 

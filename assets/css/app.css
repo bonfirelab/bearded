@@ -131,7 +131,7 @@ meta.foundation-mq-large { font-family: "only screen and (min-width:1440px)"; wi
 
 html, body { font-size: 100%; }
 
-body { background: white; color: #27313d; padding: 0; margin: 0; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 300; font-style: normal; line-height: 1; position: relative; cursor: default; }
+body { background: white; color: #27313d; padding: 0; margin: 0; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 300; font-style: normal; line-height: 1; position: relative; }
 
 a:hover { cursor: pointer; }
 
@@ -656,7 +656,7 @@ textarea { height: auto; }
 .bearded-carousel-control .bx-prev { right: 50px; }
 .bearded-carousel-control .bx-next { right: 10px; }
 
-.gallery-carousel-caption { position: absolute; top: 10px; left: 10px; background: #27313d; color: #fff; font-family: Georgia, sans-serif; padding: .4em .8em; max-width: 90%; line-height: 1.4; -webkit-border-radius: 3px; border-radius: 3px; }
+.gallery-carousel-caption { position: absolute; margin-right: 10px; -ms-word-wrap: break-word; word-wrap: break-word; top: 10px; left: 10px; background: rgba(39, 49, 61, 0.8); color: #fff; font-family: Georgia, sans-serif; padding: .4em .8em; max-width: 100%; line-height: 1.4; -webkit-border-radius: 3px; border-radius: 3px; }
 
 /** RESET AND LAYOUT
 ===================================*/
@@ -667,7 +667,8 @@ textarea { height: auto; }
 /** Content --------------------------------------------------------------------------- */
 /* ====== POSTS ====== */
 .hentry { margin-bottom: 4.2857em; position: relative; min-height: 245px; display: block; }
-.hentry:after { display: block; content: ""; background: url(../images/dotted.png) repeat 0 0 transparent; height: 7px; width: 100%; margin-top: 4.7857em; }
+.hentry:after { display: block; content: ""; background: url(assets/images/dotted.png) repeat 0 0 transparent; height: 7px; width: 100%; margin-top: 4.7857em; }
+.hentry.product:after { display: none; background: none; }
 .hentry .entry-side { position: absolute; top: 0; bottom: 0; width: 71px; left: -110px; }
 .hentry .entry-side figure { position: relative; margin-bottom: 0; }
 .hentry .entry-side figure img { -webkit-border-radius: 1000px; border-radius: 1000px; overflow: hidden; }
@@ -776,7 +777,7 @@ img.alignnone { display: block; margin: 20px 0; }
 .sidebar .widget-title { font-size: 1.1428em; margin: 0 0 1.25em 0; overflow: hidden; position: relative; clear: both; }
 .sidebar .widget-title span { position: relative; margin: 0 15px 0 18px; display: inline-block; }
 .sidebar .widget-title:before { content: ""; width: 9px; border-left: 3px solid #3a3f43; border-right: 3px solid #3a3f43; height: 9px; display: block; position: absolute; top: 50%; margin-top: -3px; left: 0; margin-right: 9px; }
-.sidebar .widget-title:after { background: url("../images/dotted.png") repeat 0 0 transparent; content: ""; float: right; height: 7px; width: 100%; position: absolute; top: 50%; margin-top: -2px; }
+.sidebar .widget-title:after { background: url("assets/images/dotted.png") repeat 0 0 transparent; content: ""; float: right; height: 7px; width: 100%; position: absolute; top: 50%; margin-top: -2px; }
 .sidebar ul { list-style: none inside; margin-bottom: 0; }
 .sidebar ul li { position: relative; padding-left: 1em; }
 .sidebar ul li a { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; transition: all 0.2s linear; color: #27313d; }
@@ -814,7 +815,7 @@ img.alignnone { display: block; margin: 20px 0; }
 /** Comments Template --------------------------------------------------------------------------- */
 /* ====== COMMENTS ======= */
 #comments ol.comment-list { list-style: none; margin: 0; }
-#comments ol.comment-list:after { display: block; content: ""; background: url(../images/dotted.png) repeat 0 0 transparent; height: 7px; width: 100%; margin-top: 4.7857em; }
+#comments ol.comment-list:after { display: block; content: ""; background: url(assets/images/dotted.png) repeat 0 0 transparent; height: 7px; width: 100%; margin-top: 4.7857em; }
 #comments ol.comment-list .comment-side { width: 51px; float: left; margin: 0 20px 0 0; text-align: center; height: 100%; clear: both; }
 #comments ol.comment-list .comment-side .avatar { position: relative; -webkit-border-radius: 1000px; border-radius: 1000px; overflow: hidden; }
 #comments ol.comment-list ol.children { list-style: none; margin: 0; }
@@ -876,8 +877,8 @@ blockquote:before { content: "\201c"; font-family: "Helvetica Neue", "Helvetica"
 @media only screen and (min-width: 1280px) { #container { max-width: 72.5em; }
   .row { max-width: 67.5em; }
   .client-block { margin-bottom: 0; }
-  .loop-pagination, .hentry, #comments { margin-left: 110px; }
-  .singular-page .loop-pagination, .singular-page .hentry, .search .loop-pagination, .search .hentry, .error-404 .loop-pagination, .error-404 .hentry { margin-left: 0; }
+  .loop-pagination, .archive .hentry, .blog .hentry, .category .hentry, .singular-post .hentry, .search .hentry, #comments { margin-left: 110px; }
+  .singular-page .loop-pagination, .singular-page .hentry, .error-404 .loop-pagination, .error-404 .hentry { margin-left: 0; }
   #comments ol.comment-list .comment-side { width: 71px; position: absolute; top: 0; left: -110px; bottom: 0; text-align: center; }
   #comments ol.comment-list .comment-side .avatar { position: relative; -webkit-border-radius: 1000px; border-radius: 1000px; overflow: hidden; }
   #comments ol.comment-list .comment-side:before { content: ""; position: absolute; top: 0; display: block; bottom: -4.2857em; width: 1px; left: 50%; background: #f3f3f3; }
@@ -903,7 +904,7 @@ blockquote:before { content: "\201c"; font-family: "Helvetica Neue", "Helvetica"
 #main-home .widget:last-child.bearded-cta-widget { margin-bottom: 0; }
 #main-home .widget .widget-title { font-size: 1.125em; margin: 0 0 1.67em 0; overflow: hidden; position: relative; clear: both; padding-left: 21px; }
 #main-home .widget .widget-title:before { content: ""; width: 9px; border-left: 3px solid #ccc; border-right: 3px solid #ccc; height: 9px; display: block; position: absolute; top: 50%; margin-top: -3px; left: 0; }
-#main-home .widget .widget-title:after { background: url("../images/dotted.png") repeat 0 0 transparent; content: ""; float: right; margin-left: 12px; height: 7px; width: 100%; position: absolute; top: 50%; margin-top: -2px; }
+#main-home .widget .widget-title:after { background: url("assets/images/dotted.png") repeat 0 0 transparent; content: ""; float: right; margin-left: 12px; height: 7px; width: 100%; position: absolute; top: 50%; margin-top: -2px; }
 #main-home .client-title { font-size: 1.5em; margin-top: 0; text-align: center; margin-bottom: 1.25em; letter-spacing: -1px; }
 #main-home .client-block { margin-bottom: 1em; text-align: center; }
 #main-home .bearded-services-container { text-align: center; }

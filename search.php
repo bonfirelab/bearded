@@ -18,12 +18,16 @@
 					<article id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
 
 						<header class="entry-header">
-							<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
-						</header><!-- .entry-header -->
+			<?php bearded_post_thumbnail(); ?>
+			<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
+			<?php get_template_part('entry', 'side'); ?>
+		</header><!-- .entry-header -->
 
-						<div class="entry-summary">
-							<?php the_excerpt(); ?>
-						</div><!-- .entry-summary -->
+		<div class="entry-summary">
+			
+			<?php the_excerpt(); ?>
+			<?php wp_link_pages( array( 'before' => '<p class="page-links">' . '<span class="before">' . __( 'Pages:', 'bearded' ) . '</span>', 'after' => '</p>' ) ); ?>
+		</div><!-- .entry-summary -->
 
 						<footer class="entry-footer">
 							<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . sprintf( __( '[entry-published] &mdash; <code>%s</code>', 'chun' ), get_permalink() ) . '</div>' ); ?>
