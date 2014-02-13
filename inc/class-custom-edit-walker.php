@@ -19,7 +19,7 @@ class Bearded_Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
 	 * @param int $depth Depth of menu item. Used for padding.
 	 * @param object $args
 	 */
-	function start_el(&$output, $item, $depth, $args, $id = 0) {
+	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 	    global $_wp_nav_menu_max_depth;
 	   
 	    $_wp_nav_menu_max_depth = $depth > $_wp_nav_menu_max_depth ? $depth : $_wp_nav_menu_max_depth;

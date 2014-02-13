@@ -47,7 +47,7 @@ class Bearded_Widget_Products extends WP_Widget {
 		$orderby     = sanitize_title( $instance['orderby'] );
 		$order       = sanitize_title( $instance['order'] );
 		$show_hidden = $instance['show_hidden'];
-		$hide_Free = $instance['hide_free'];
+		$hide_free = $instance['hide_free'];
 
 		$query_args = array(
     		'posts_per_page' => $number,

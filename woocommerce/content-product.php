@@ -11,7 +11,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $product, $woocommerce_loop;
+global $product, $woocommerce_loop, $post;
 
 // Store loop count we're currently on
 if ( empty( $woocommerce_loop['loop'] ) )

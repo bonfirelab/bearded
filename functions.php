@@ -380,9 +380,10 @@ function bearded_first_and_last_menu_class( $objects, $args ) {
     foreach ( $sanitized_parent_ids as $i => $id )
         $objects[$i]->classes[] = 'last-menu-item';
 
+    $keys = array_keys( $top_ids );
     // Finish it off by adding classes to the top level menu items
     $objects[1]->classes[] = 'first-menu-item'; // We can be assured 1 will be the first item in the menu :-)
-    $objects[end( array_keys( $top_ids ) )]->classes[] = 'last-menu-item';
+    $objects[end( $keys )]->classes[] = 'last-menu-item';
 
     // Return the menu objects
     return $objects;
@@ -1016,7 +1017,7 @@ function bearded_wp_head_shadow_css() {
 }
 
 class Portfolio_Walker extends Walker_Category {
-    function start_el(&$output, $category, $depth, $args, $id = 0) {
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
             extract($args);
             $cat_name = esc_attr( $category->name );
             $cat_name = apply_filters( 'list_cats', $cat_name, $category );
