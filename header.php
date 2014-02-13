@@ -16,7 +16,11 @@
 
 	<div id="container">
 		
-		<header id="header">
+		<?php 
+			$hclass = (function_exists( 'is_woocommerce') ) ? 'with-woocommerce' : ''; 
+		?>
+
+		<header id="header" class="<?php echo $hclass; ?>">
 
 			<hgroup id="branding">
 				<h1 id="site-title" role="logo">
@@ -29,22 +33,31 @@
 				<h2 id="site-description" class="hide-for-small"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup><!-- #branding -->
 
-			<hgroup id="navigation" role="navigation">
-				<?php get_template_part( 'menu', 'primary' ); // Loads the menu-secondary.php template. ?>
+			
+			<hgroup id="navigation" role="navigation" >				
+
+				<?php do_atomic( 'before_nav' ); ?>
+
+				<?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
+
+				<?php do_atomic( 'after_nav' ); ?>
 			</hgroup>
+
+
 		</header><!-- #header -->
 
-		<?php 
-			if(is_page_template( 'page-templates/home.php' ) || is_front_page() ) {
-				bearded_featured_slider();
-			}
-		?>
+		<div class="main-wrapper">
+			
+			<?php 
+				if(is_page_template( 'page-templates/home.php' ) || is_front_page() ) {
+					bearded_featured_slider();
+				}
+			?>
 		
-
-		<div id="main<?php echo (is_page_template( 'page-templates/home.php' ) ? '-home' : '' ); ?>">
-			<?php if(!is_page_template( 'page-templates/home.php' ) ) { ?> 
-			<div class="row">
-			<?php } ?>
-			
-				<?php do_atomic('open_main_row'); ?>
-			
+			<div id="main<?php echo (is_page_template( 'page-templates/home.php' ) ? '-home' : '' ); ?>">
+				<?php if(!is_page_template( 'page-templates/home.php' ) ) { ?> 
+				<div class="row">
+				<?php } ?>
+				
+					<?php do_atomic('open_main_row'); ?>
+				

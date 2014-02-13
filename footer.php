@@ -43,12 +43,17 @@
 
 					</ul>
 					<?php } ?>
-					<?php echo apply_atomic_shortcode( 'footer_content', '<p class="credit">' . __( 'Copyright &copy; [the-year] [site-link]. Powered by [wp-link] and [theme-link].', 'hybrid-base' ) . '</p>' ); ?>
+					<?php 
+						echo apply_atomic_shortcode( 'footer_content', '<p class="credit">' . __( 'Copyright &copy; [the-year] [site-link]. Powered by [wp-link] and [theme-link].', 'hybrid-base' ) . '</p>' );
+						
+					?>
 				</div>
 			</div><!-- .footer-content -->
 
 
 		</footer><!-- #footer -->
+
+	</div> <!-- end main-wrapper -->
 
 	</div><!-- #container -->
 

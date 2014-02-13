@@ -1,3 +1,20 @@
+/*!
+ * Theme Name: Bearded
+ * Theme URI: http://bonfirelab.com/themes/bearded
+ * Description: A responsive CSS3 and HTML5 blogging, ecommerce and portfolio theme.  It supports all post formats and has layout, and color options built into the theme customizer. The theme also supports the <a href="http://wordpress.org/extend/plugins/custom-content-portfolio">Custom Content Portfolio</a> and <a href="http://wordpress.org/extend/plugins/woocommerce">Woocommerce</a> plugin, giving artists and other creative people the ability to share their work.
+ * Tags: custom-background, custom-colors, custom-menu, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, orange, black, one-column, two-columns, left-sidebar, right-sidebar, flexible-width
+ * Version: 1.0.0
+ * Author: Hermanto Lim
+ * Author URI: http://bonfirelab.com
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Bearded WordPress Theme, Copyright 2012-2013 Bonfirelab
+ * Bearded is distributed under the terms of the GNU GPL
+ */
+
+
+
 $body-font-weight: 300;
 $body-font-color: #27313d;
 $header-font-color: $body-font-color;
@@ -41,7 +58,7 @@ $button-border-style: none !default;
 
 $row-width: 67.5em !default;
 $row-width-small: 900px !default;
-$column-gutter: 2.857142857142857em !default;
+$column-gutter: 2.5em !default;
 
 $button-tny: em-calc(9) !default;
 $button-sml: em-calc(12) !default;
@@ -54,6 +71,8 @@ $topbar-height: 70px;
 $topbar-bg: $theme-bg;
 $input-include-glowing-effect: false;
 $input-box-shadow: none;
+$input-font-size: em-calc(16) !default;
+$alert-font-size: em-calc(16) !default;
 $topbar-link-font-size: 1em;
 
 $topbar-link-bg: $theme-bg-alt;
@@ -75,6 +94,10 @@ $input-focus-border-color: $theme-color;
 $input-focus-bg-color: #fefefe !default;
 
 $microformat-fullname-font-size: 1.1428em;
+$table-even-row-bg: #fafafa !default;
+
+$table-head-font-size: em-calc(16) !default;
+$table-row-font-size: em-calc(16) !default;
 
 @mixin box-shadow($param){
 	box-shadow: $param;
@@ -95,4 +118,53 @@ $microformat-fullname-font-size: 1.1428em;
       -ms-transform: rotate($deg);
        -o-transform: rotate($deg);
           transform: rotate($deg);
+}
+
+@mixin long-shadow($type, $color, $length, $fadeout: true, $skew: false, $direction: right){
+  $shadow: '';
+  @if $skew == false or $type == text{
+    @if $direction == right {
+      @for $i from 0 to $length - 1 {
+        $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
+      }
+    }
+    @if $direction == left {
+      @for $i from 0 to $length - 1 {
+        $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $color + ',';
+       }
+      }
+     }
+        
+   @if $fadeout == true{
+    @for $i from 1 to $length - 1 {
+      @if $type == text or $skew == false{
+        @if $direction == right{
+          $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+        }
+        @if $direction == left{
+          $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+        }
+      }
+      @if ($type == box) and $skew == true{
+        @if $direction == right {
+          $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+        }
+        @if $direction == left {
+          $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+        }
+      }
+  }
+  $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba($color, 0);
+ }
+ @if $fadeout == false{
+   @if $skew == true and ( $type == box ){
+     @for $i from 0 to $length - 1 {
+            $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
+      }
+   }
+    $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
+ }
+ $shadow: unquote($shadow);
+  @if $type == 'box' {box-shadow: $shadow;}
+  @if $type == 'text' {text-shadow: $shadow;}
 }
