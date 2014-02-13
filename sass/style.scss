@@ -2088,6 +2088,9 @@ li.product .onsale, .singular-product li.product .onsale {
 		font-size: 1.428571428571429em;
 		margin-bottom: 1.8em;
 	}
+	.woocommerce-verification-required {
+		margin-top: 1em;
+	}
 	#comments {
 		li.comment {
 			.comment-author {
@@ -3137,7 +3140,7 @@ td.product-remove, td.product-thumbnail, td.product-price, th.product-remove, th
 		margin-left: 110px;
 	}
 
-	.review-title, .noreviews {
+	.review-title {
 		margin-left: -110px;
 	}
 	.singular-page, .error-404 {
