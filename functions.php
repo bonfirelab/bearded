@@ -348,11 +348,14 @@ add_action('wp_enqueue_scripts', 'bearded_enqueue_scripts');
  * @return object $objects Amended array of nav menu objects with new class
  */
 function bearded_first_and_last_menu_class( $objects, $args ) {
+
+	
    // Add first/last classes to nested menu items
     $ids        = array();
     $parent_ids = array();
     $top_ids    = array();
     foreach ( $objects as $i => $object ) {
+    	
         // If there is no menu item parent, store the ID and skip over the object
         if ( 0 == $object->menu_item_parent ) {
             $top_ids[$i] = $object;
@@ -1013,7 +1016,7 @@ function bearded_register_colors( $color_palette ) {
 
 function bearded_wp_head_shadow_css() {
 	$hex = get_theme_mod( 'color_palette_primary' );
-	echo '<style>.shop-nav ul.cart > li.cart-container a.cart-button:hover .contents { background-color: #'.bearded_color_mod( $hex, 'darker', '5' ).' } .shop-nav ul.cart > li.cart-container a.cart-button .contents { background-color: #'.bearded_color_mod( $hex, 'darker', '2' ).'} a:hover, a:focus { color: #'.bearded_color_mod( $hex, 'darker', '2' ).'} #navigation #menu-primary ul { box-shadow: 0 4px 0 #'.$hex.' inset !important; -moz-box-shadow: 0 4px 0 #'.$hex.' inset !important; -webkit-box-shadow: 0 4px 0 #'.$hex.' inset  !important; } @media only screen and (min-width: 768px){ #navigation #menu-primary ul li > ul.sub-menu { box-shadow: 4px 0 0 #'.$hex.' !important; -moz-box-shadow: 4px 0 0 #'.$hex.' !important; -webkit-box-shadow: 4px 0 0 #'.$hex.' !important;} }</style>';
+	echo '<style>.shop-nav ul.cart > li.cart-container a.cart-button:hover .contents { background-color: #'.bearded_color_mod( $hex, 'darker', '5' ).' } .shop-nav ul.cart > li.cart-container a.cart-button .contents { background-color: #'.bearded_color_mod( $hex, 'darker', '2' ).'} a:hover, a:focus { color: #'.bearded_color_mod( $hex, 'darker', '2' ).'} #navigation #menu-primary ul { box-shadow: 0 4px 0 #'.$hex.' inset !important; -moz-box-shadow: 0 4px 0 #'.$hex.' inset !important; -webkit-box-shadow: 0 4px 0 #'.$hex.' inset  !important; } @media only screen and (min-width: 768px){ #navigation #menu-primary ul li > ul.sub-menu, #navigation #menu-primary ul li > ul.children { box-shadow: 4px 0 0 #'.$hex.' !important; -moz-box-shadow: 4px 0 0 #'.$hex.' !important; -webkit-box-shadow: 4px 0 0 #'.$hex.' !important;} }</style>';
 }
 
 class Portfolio_Walker extends Walker_Category {
@@ -1161,6 +1164,24 @@ function bearded_setup_admin_bar() {
 	  show_admin_bar(false);
 	}
 }
+
+/**
+ * @since 1.0.3
+ * Show admin bar only for role above subscriber
+ *
+ */
+function bearded_add_menu_id( $page_markup ) {
+
+	preg_match('/^<div class=\"([a-z0-9-_]+)\">/i', $page_markup, $matches);
+
+	$divclass = $matches[1];
+	$toreplace = array('<div class="'.$divclass.'">', '</div>');
+	$new_markup = str_replace($toreplace, '', $page_markup);
+	$new_markup = preg_replace('/^<ul>/i', '<ul class="'.$divclass.'">', $new_markup);
+	return $new_markup;
+}
+
+add_filter('wp_page_menu', 'bearded_add_menu_id');
 
 require_once( BEARDED_INC . 'widgets/widget-home-cta.php');
 require_once( BEARDED_INC . 'widgets/widget-home-clients.php');
