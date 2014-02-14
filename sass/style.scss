@@ -239,7 +239,7 @@ select {
 					&:before {
 						display: none;
 					}
-					&.sub-menu {
+					&.sub-menu, &.children {
 						@include box-shadow(none !important);
 					}
 				} 
@@ -3054,7 +3054,7 @@ td.product-remove, td.product-thumbnail, td.product-price, th.product-remove, th
 					margin-top: 0;
 					padding-top: 0;
 					background: $body-font-color;
-					&.sub-menu {
+					&.sub-menu, &.children {
 						@include box-shadow(4px 0 0 $theme-color);
 					}
 					&:before {
