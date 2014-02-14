@@ -25,8 +25,16 @@ changelog
 * Fixed Footer Issue
 * Fixed Social Google Plus Issue
 
+= 1.0.1 =
+* Fixed Translation function call in footer
 
-* Original Release.
+= 1.0.2 =
+* Woocommerce Compatibility Update
+
+= 1.0.3 =
+* Added Menu Fallback
+
+
 
 Theme Demo
 ==========
