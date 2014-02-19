@@ -941,10 +941,10 @@ function bearded_open_main_row_hook() {
 	}
 	if($layout == '2c-r' ) {
 
-		if( function_exists('is_woocommerce') && !is_woocommerce() && !bearded_is_woopage() ) {
-			get_sidebar( 'primary' );
-		} else {
+		if( ( function_exists('is_woocommerce') && is_woocommerce() ) || bearded_is_woopage() ) {
 			get_sidebar( 'shop' );
+		} else {
+			get_sidebar( 'primary' );
 		}
 		
 	}
@@ -960,10 +960,10 @@ function bearded_close_main_row_hook() {
 	}
 	if($layout == '2c-l' || $layout == 'default') {
 
-		if( function_exists('is_woocommerce') && !is_woocommerce() && !bearded_is_woopage() ) {
-			get_sidebar( 'primary' );
-		} else {
+		if( ( function_exists('is_woocommerce') && is_woocommerce() ) || bearded_is_woopage() ) {
 			get_sidebar( 'shop' );
+		} else {
+			get_sidebar( 'primary' );
 		}
 	}
 }
