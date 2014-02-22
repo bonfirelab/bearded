@@ -34,6 +34,9 @@ changelog
 = 1.0.3 =
 * Added Menu Fallback
 
+= 1.0.4 =
+* Fixed Sidebar Issue when Woocommerce not installed
+
 
 
 Theme Demo
