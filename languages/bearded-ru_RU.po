@@ -1,0 +1,1456 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bearded\n"
+"POT-Creation-Date: 2014-02-13 22:00+0700\n"
+"PO-Revision-Date: 2014-02-19 11:39+0400\n"
+"Last-Translator: Valeriy <shm.valeriy@gmail.com>\n"
+"Language-Team: Bonfirelab <hermanto@bonfirelab.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_html_e;esc_html__;_x;_n;_x:1,2c;"
+"_n:1,2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\wp3\\wp-content\\themes\\bearded\n"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/404.php:19
+msgid "Whoah! You broke something!"
+msgstr "Ошибка 404. Страница не найдена."
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/404.php:25
+#, php-format
+msgid ""
+"Just kidding! You tried going to %s, which doesn't exist, so that means I "
+"probably broke something."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/404.php:28
+msgid ""
+"The following is a list of the latest posts from the blog. Maybe it will "
+"help you find what you're looking for."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comment.php:34
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product/review.php:52
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:18
+msgid "&larr; Previous"
+msgstr "&larr; Предыдущая"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:19
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr "Страница %1$s из %2$s"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:20
+msgid "Next &rarr;"
+msgstr "Следующая &rarr;"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:30
+#, php-format
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:36
+msgid "Comments are closed."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:43
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:44
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+msgstr ""
+"Вошли как <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:47
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:202
+msgid "Leave a Reply"
+msgstr "Комментарии"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:48
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:203
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:49
+msgid "Cancel Reply"
+msgstr "SWT"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/comments.php:50
+msgid "Submit Comment"
+msgstr "Отправить"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-aside.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-aside.php:26
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-attachment.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-attachment.php:30
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-audio.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-audio.php:39
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-chat.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-chat.php:38
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-gallery.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-gallery.php:30
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-image.php:13
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-image.php:28
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-link.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-link.php:28
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-page.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-page.php:25
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-portfolio_item.php:13
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-portfolio_item.php:30
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-quote.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-quote.php:31
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-status.php:13
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-status.php:31
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-video.php:12
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-video.php:32
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content.php:13
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content.php:31
+#: C:\wamp\www\wp3\wp-content\themes\bearded/search.php:29
+msgid "Pages:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-aside.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-attachment.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-audio.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-chat.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-gallery.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-image.php:17
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-link.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-quote.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-status.php:17
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-video.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content.php:17
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"Tagged \"]"
+msgstr ""
+"[entry-terms taxonomy=\"category\" before=\" Рубрики \"] [entry-terms before="
+"\"Метки \"]"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-audio.php:38
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-chat.php:37
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-quote.php:23
+msgid "Read more &rarr;"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/content-portfolio_item.php:17
+msgid "[entry-terms taxonomy=\"portfolio\" before=\"Posted in \"]"
+msgstr "[entry-terms taxonomy=\"portfolio\" before=\"Рубрики \"]"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:6
+#: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:7
+#, php-format
+msgid "Posted by: %1$s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:44
+#, php-format
+msgid "Project Created on %1$s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/entry-side.php:67
+msgid "Client: "
+msgstr "Клиент:"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/footer.php:47
+msgid ""
+"Copyright &copy; [the-year] [site-link]. Powered by [wp-link] and [theme-"
+"link]."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:250
+msgctxt "sidebar"
+msgid "Footer 1"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:254
+msgctxt "sidebar"
+msgid "Footer 2"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:258
+msgctxt "sidebar"
+msgid "Footer 3"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:274
+msgctxt "sidebar"
+msgid "Home Page"
+msgstr "Домашняя страница"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:279
+msgctxt "sidebar"
+msgid "Shop"
+msgstr "Магазин"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:428
+#, php-format
+msgid "Browse %s posts"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:712
+msgid "Client:"
+msgstr "Клиент"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:718
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:44
+msgid "Date:"
+msgstr "Дата:"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:981
+msgid "Project <abbr title=\"Uniform Resource Locator\">URL</abbr>:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:997
+msgid "Primary Color"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:1027
+#, php-format
+msgid "View all posts filed under %s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/functions.php:1042
+#, php-format
+msgid "Feed for all posts filed under %s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-error.php:4
+msgid "Nothing found"
+msgstr "Ничего ненайденно"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-error.php:8
+msgid "Apologies, but no entries were found."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:4
+msgid "<span class=\"meta-nav\">&larr;</span> Return to entry"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:10
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:50
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущая"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:11
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:51
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Следующая <span class=\"meta-nav\">&rarr;</span>"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:14
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:200
+msgid "Previous"
+msgstr "Предыдущая"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:14
+#: C:\wamp\www\wp3\wp-content\themes\bearded/loop-nav.php:16
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:201
+msgid "Next"
+msgstr "Следующая"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/search.php:33
+#, php-format
+msgid "[entry-published] &mdash; <code>%s</code>"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/searchform.php:6
+msgid "Enter search terms..."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/searchform.php:9
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:45
+msgid "Search"
+msgstr "Поиск"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:61
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:65
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:89
+msgid "Move up"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:102
+msgid "Move down"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:104
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:106
+msgid "Edit Menu Item"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:115
+msgid "URL"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:122
+msgid "Navigation Label"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:128
+msgid "Title Attribute"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:135
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:140
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:146
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:152
+msgid "Description"
+msgstr "Описание"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:154
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:162
+msgid "Menu Icon"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:165
+msgid "Choose Icon"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:171
+msgid "Remove icon"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:179
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:192
+msgid "Remove"
+msgstr "Удалить"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:193
+msgid "Cancel"
+msgstr "Отмена"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/class-custom-edit-walker.php:227
+msgid "Use Icon"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:23
+msgid "Social Settings"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:62
+#, php-format
+msgid "%1$s URL"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:86
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:94
+msgid "Logo"
+msgstr "Логотип"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-admin.php:88
+msgid ""
+"Upload a logo to replace the default site name and description in the header"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:109
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:110
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:30
+msgid "My Account"
+msgstr "Личный кабинет"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:114
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:115
+msgid "Edit Account"
+msgstr "Мои настройки"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:119
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:120
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:137
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:138
+msgid "Visit Shop"
+msgstr "Магазин"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:125
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:126
+msgid "View Wishlist"
+msgstr "Список желаний"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:131
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:132
+msgid "Logout"
+msgstr "Выйти"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:142
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:143
+msgid "Login"
+msgstr "Войти"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:147
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:148
+msgid "Lost Password"
+msgstr "Восстановить пароль"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:190
+msgid "Add"
+msgstr "Добавить"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:288
+msgid "View Cart"
+msgstr "Показать корзину"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/functions-woocommerce.php:379
+msgid "View your shopping cart"
+msgstr "Показать вашу корзину"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:36
+msgid "Show Clients lists. Best use in homepage widget."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:38
+msgid "Bearded Client Lists"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:123
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:107
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-posts.php:138
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:179
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:155
+msgid "Title"
+msgstr "Заголовок"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:130
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:112
+msgid "Link to:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:135
+msgid "Link Title:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-clients.php:140
+msgid "Image URL:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:36
+msgid "Show Call to Action. Best use in homepage widget."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:38
+msgid "Bearded Call to Action"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:117
+msgid "Button Label"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-cta.php:122
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:178
+msgid "Content"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-posts.php:36
+msgid "Show Latest Blog Posts. Best use in homepage widget."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-posts.php:38
+msgid "Bearded Latest Posts"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-posts.php:143
+msgid "Post Type"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-posts.php:145
+msgid "Post"
+msgstr "Запись"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-posts.php:146
+msgid "Portfolio Item"
+msgstr "Запись портфолио"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:35
+msgid "Show Latest Woocommerce Products. Best use in homepage widget."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:37
+msgid "Bearded Products"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:184
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:203
+msgid "Type"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:186
+msgid "All Products"
+msgstr "Все Товары"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:187
+msgid "Featured Products"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:188
+msgid "On Sale Products"
+msgstr "Распродажа"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:193
+msgid "Order By"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:195
+msgid "Date"
+msgstr "Дата"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:196
+msgid "Price"
+msgstr "Цена"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:197
+msgid "Random"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:198
+msgid "Sales"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:205
+msgid "Ascending"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:206
+msgid "Descending"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:211
+msgid "Number of Post"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:213
+msgid "4 Posts"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:214
+msgid "8 Posts"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:215
+msgid "12 Posts"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:222
+msgid "Hide Free Product"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-product.php:227
+msgid "Show Hidden Product"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:36
+msgid "Show Services Info. Best use in homepage widget."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:38
+msgid "Bearded Services"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:160
+msgid "Link"
+msgstr "Ссылка"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:165
+msgid "Icon URL"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:167
+msgid ""
+"Custom URL for the icon. If filled this will be used instead of icon class."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:171
+msgid "Icon Class"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/inc/widgets/widget-home-services.php:174
+msgid "Use icon class from FontAwesome"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-post-seo.php:39
+msgid "SEO"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-post-seo.php:72
+msgid "Document Title:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-post-seo.php:78
+msgid "Meta Description:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-post-seo.php:84
+msgid "Meta Keywords:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-post-template.php:45
+msgid "Template"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-about.php:31
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-about.php:36
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-about.php:61
+msgid "Theme:"
+msgstr "Тема:"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-about.php:69
+msgid "Version:"
+msgstr "Версия:"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-about.php:77
+msgid "Author:"
+msgstr "Автор:"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-about.php:85
+msgid "Description:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-footer.php:29
+msgid "Footer settings"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/meta-box-theme-footer.php:52
+msgid ""
+"You can add custom <acronym title=\"Hypertext Markup Language\">HTML</"
+"acronym> and/or shortcodes, which will be automatically inserted into your "
+"theme."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/theme-settings.php:47
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/theme-settings.php:171
+#, php-format
+msgid "%s Theme Settings"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/theme-settings.php:48
+msgid "Theme Settings"
+msgstr "Настройки Темы"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/theme-settings.php:172
+msgid "Customize"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/theme-settings.php:262
+msgid "Documentation"
+msgstr "Документация"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/admin/theme-settings.php:266
+msgid "Support"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"archives."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:44
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:180
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:576
+msgid "Archives"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:79
+msgid "Select Year"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:82
+msgid "Select Month"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:85
+msgid "Select Week"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:88
+msgid "Select Day"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:91
+msgid "Select Post"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:181
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:160
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:217
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-calendar.php:108
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:195
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-nav-menu.php:131
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-pages.php:178
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:144
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-tags.php:207
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-archives.php:225
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:208
+msgid "Show post count?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"author lists."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:44
+msgid "Authors"
+msgstr "Авторы"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:204
+msgid "<acronym title=\"Hypertext Markup Language\">HTML</acronym>?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:212
+msgid "Exclude admin?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:216
+msgid "Show full name?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-authors.php:220
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:298
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-tags.php:318
+msgid "Hide empty?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"bookmarks (links)."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:44
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:86
+msgid "Bookmarks"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:319
+msgid "Categorize?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:323
+msgid "Show description?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:327
+msgid "Hide invisible?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:331
+msgid "Show rating?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:335
+msgid "Show updated?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:339
+msgid "Show images?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:343
+msgid "Show name?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-bookmarks.php:347
+msgid "Show private?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-calendar.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"calendar."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-calendar.php:44
+msgid "Calendar"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-calendar.php:113
+msgid "One-letter abbreviation?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"category links."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:44
+msgid "Categories"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:286
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-pages.php:277
+msgid "Hierarchical?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:290
+msgid "Use description?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-categories.php:294
+msgid "Show count?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-nav-menu.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"menus."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-nav-menu.php:44
+msgid "Navigation Menu"
+msgstr "Навигация"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-pages.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your page "
+"links."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-pages.php:44
+msgid "Pages"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:33
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"search form."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:148
+msgid "Search Label:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:152
+msgid "Search Text:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:159
+msgid "Search Submit:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-search.php:164
+msgid "Use theme's <code>searchform.php</code>?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-tags.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your tags."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-tags.php:44
+msgid "Tags"
+msgstr "Метки"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/classes/widget-tags.php:314
+msgid "Pad counts?"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:175
+msgid "Browse:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:176
+msgid "Home"
+msgstr "Домой"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:177
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:582
+#, php-format
+msgid "Search results for \"%s\""
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:178
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:586
+msgid "404 Not Found"
+msgstr "404 Страница не найдена"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:179
+#, php-format
+msgid "Page %d"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:181
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:553
+msgid "g:i a"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:182
+#, php-format
+msgid "Minute %d"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:183
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:559
+msgid "g a"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:184
+msgid "d"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:185
+#, php-format
+msgid "Week %d"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:186
+msgid "F"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:187
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:1027
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:565
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:571
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:70
+msgid "Y"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:1122
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:1158
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:1175
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:1206
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:205
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:527
+msgid "Edit"
+msgstr "Редактировать"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:1150
+msgid "Split"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/breadcrumb-trail.php:1154
+msgid "Merge"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/custom-field-series.php:86
+msgid "Articles in this series"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/custom-field-series.php:212
+msgid "Series"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/featured-header.php:202
+msgid "Featured Header"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/post-stylesheets.php:286
+msgid "Stylesheet"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-fonts.php:401
+msgid "Fonts"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:337
+msgid "Default"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:338
+msgid "One Column"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:339
+msgid "Two Columns, Left"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:340
+msgid "Two Columns, Right"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:341
+msgid "Three Columns, Left"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:342
+msgid "Three Columns, Right"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:343
+msgid "Three Columns, Center"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:428
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:538
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:623
+msgid "Layout"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:454
+msgid "Layout is a theme-specific structure for the single view of the post."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/extensions/theme-layouts.php:656
+msgid "Global Layout"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:182
+msgid "*"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:187
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:89
+msgid "Name"
+msgstr "Имя"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:188
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:91
+msgid "Email"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:189
+msgid "Website"
+msgstr "Сайт"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:195
+msgid "Comment"
+msgstr "Комментировать"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:196
+#, php-format
+msgid ""
+"You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a "
+"comment."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:197
+#, php-format
+msgid "Logged in as <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:197
+msgid "Log out &raquo;"
+msgstr "Выйти &raquo;"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:204
+msgid "Click here to cancel reply."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/comments.php:205
+msgid "Post Comment"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:553
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:559
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:562
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:568
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:571
+#, php-format
+msgid "Archive for %s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:556
+#, php-format
+msgid "Archive for minute %s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:556
+msgid "i"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:562
+msgid "F jS, Y"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:565
+#, php-format
+msgid "Archive for week %s of %s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:565
+msgid "W"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/context.php:590
+#, php-format
+msgid "%1$s Page %2$s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/customize.php:63
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/customize.php:88
+msgid "Footer"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/deprecated.php:684
+#, php-format
+msgid ""
+"<code>%1$s</code> &mdash; This function has been removed or replaced by "
+"another function."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/menus.php:38
+msgctxt "nav menu location"
+msgid "Primary"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/menus.php:42
+msgctxt "nav menu location"
+msgid "Secondary"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/menus.php:46
+msgctxt "nav menu location"
+msgid "Subsidiary"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:111
+msgid "Asides"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:112
+msgid "Audio"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:113
+msgid "Chats"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:114
+msgid "Images"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:115
+msgid "Galleries"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:116
+msgid "Links"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:117
+msgid "Quotes"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:118
+msgid "Status Updates"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/post-formats.php:119
+msgid "Videos"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/settings.php:83
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/settings.php:87
+msgid "Copyright &#169; [the-year] [site-link]."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/settings.php:83
+msgid "Powered by [wp-link], [theme-link], and [child-link]."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/settings.php:87
+msgid "Powered by [wp-link] and [theme-link]."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:93
+msgid "WordPress"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:134
+msgid "Log out"
+msgstr "Выйти"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:136
+msgid "Log in"
+msgstr "Войти"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:151
+#, php-format
+msgid "This page loaded in %1$s seconds with %2$s database queries."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:257
+msgid "Leave a response"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:258
+#, php-format
+msgid "%1$s Response"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:259
+#, php-format
+msgid "%1$s Responses"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:385
+msgid "Shortlink"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:410
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:506
+msgid "Permalink"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:455
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:546
+msgid "Reply"
+msgstr "Ответить"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/shortcodes.php:547
+msgid "Log in to reply."
+msgstr "Войти чтобы ответить"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:87
+msgctxt "sidebar"
+msgid "Primary"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:88
+msgid "The main (primary) widget area, most often used as a sidebar."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:91
+msgctxt "sidebar"
+msgid "Secondary"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:92
+msgid ""
+"The second most important widget area, most often used as a secondary "
+"sidebar."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:95
+msgctxt "sidebar"
+msgid "Subsidiary"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:96
+msgid "A widget area loaded in the footer of the site."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:99
+msgctxt "sidebar"
+msgid "Header"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:100
+msgid "Displayed within the site's header area."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:103
+msgctxt "sidebar"
+msgid "Before Content"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:104
+msgid "Loaded before the page's main content area."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:107
+msgctxt "sidebar"
+msgid "After Content"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:108
+msgid "Loaded after the page's main content area."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:111
+msgctxt "sidebar"
+msgid "After Singular"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/sidebars.php:112
+msgid ""
+"Loaded on singular post (page, attachment, etc.) views before the comments "
+"area."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/library/functions/utility.php:197
+msgid "(Untitled)"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/page-templates/portfolio-3.php:20
+#: C:\wamp\www\wp3\wp-content\themes\bearded/page-templates/portfolio-4.php:20
+msgid "All"
+msgstr "Все"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/loop-shop.php:40
+msgid "No products found which match your selection."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:22
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product/rating.php:23
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:26
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product/rating.php:25
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product/review.php:40
+msgid "out of 5"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:31
+#, php-format
+msgid "%s review for %s"
+msgid_plural "%s reviews for %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:37
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:59
+msgid "There are no reviews yet"
+msgstr "Здесь еще нет отзывов"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:65
+msgid "Add Your Review"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:69
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:85
+msgid "Add a review"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:85
+msgid "Be the first to review"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:94
+msgid "Submit Review"
+msgstr "Отправить"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:101
+msgid "Rating"
+msgstr "Рэйтинг"
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:102
+msgid "Rate&hellip;"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:103
+msgid "Perfect"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:104
+msgid "Good"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:105
+msgid "Average"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:106
+msgid "Not that bad"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:107
+msgid "Very Poor"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product-reviews.php:112
+msgid "Your Review"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:18
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:22
+msgid "Please attempt your purchase again or go to your account page."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:24
+msgid "Please attempt your purchase again."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:28
+msgid "Pay"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:36
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:68
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:40
+msgid "Order:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:48
+msgid "Total:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/checkout/thankyou.php:53
+msgid "Payment method:"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product/rating.php:28
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product/review.php:29
+msgid "verified owner"
+msgstr ""
+
+#: C:\wamp\www\wp3\wp-content\themes\bearded/woocommerce/single-product/review.php:39
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
