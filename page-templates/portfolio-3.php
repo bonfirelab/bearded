@@ -16,13 +16,13 @@ get_header();
 		</div><!-- .entry-content -->
 
 		 <div class="row"><div class="column large-12">
-	    	<ul id="isotope-filters" class="nostyle list-centered">
-	          <li><a href="#all" data-filter="isotope-item" class="active"><?php _e('All', 'bearded'); ?></a></li>
+	    	<ul id="shuffle-filters" class="nostyle list-centered">
+	          <li><a href="#all" data-filter="all" class="active"><?php _e('All', 'bearded'); ?></a></li>
 			  <?php wp_list_categories( array('title_li' => '', 'taxonomy' => 'portfolio', 'walker' => new Portfolio_Walker() ) ); ?>
 			</ul>
 	    </div></div>
 
-		<div class="row portfolio-3-columns" id="portfolio-isotope">
+		<div class="row portfolio-3-columns" id="portfolio-shuffle">
 		<?php
 			$args = array(
 				'post_type' => 'portfolio_item',
@@ -33,17 +33,21 @@ get_header();
 			if( $portfolio_query->have_posts() ) : while( $portfolio_query->have_posts() ) : $portfolio_query->the_post(); ?>
 
 				<?php
+					$term_lists = array();
+
 					 $terms =  get_the_terms( get_the_ID(), 'portfolio' ); 
 							    $term_list = '';
 							    if( is_array($terms) ) {
 							        foreach( $terms as $term ) {
 			    				        $term_list .= urldecode($term->slug);
 			    				        $term_list .= ' ';
+			    				        $term_lists[] = $term->slug;
 			    				    }
 						        }
+					 $term_lists = json_encode( $term_lists );
 				     ?>
 
-				<div class="column large-3 portfolio-entry-container <?php echo $term_list; ?> isotope-item" id="portfolio-item-<?php echo get_the_ID(); ?>">
+				<div data-groups='<?php echo $term_lists; ?>' class="column large-4 small-centered large-uncentered portfolio-entry-container shuffle-elem" id="portfolio-item-<?php echo get_the_ID(); ?>">
 					<div class="portfolio-entry">
 						<div class="portfolio-entry-thumbnail">
 					<?php if(current_theme_supports( 'get-the-image' )) { get_the_image( array( 'size' => 'large' ) ); } ?>
@@ -58,7 +62,7 @@ get_header();
 				</div>
 
 		<?php endwhile; endif; wp_reset_postdata(); ?>
-
+		<div class="small-1 shuffle__sizer"></div>
 		</div>
 	</article><!-- .hentry -->
 </div><!-- #content -->

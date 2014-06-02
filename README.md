@@ -37,6 +37,10 @@ changelog
 = 1.0.4 =
 * Fixed Sidebar Issue when Woocommerce not installed
 
+= 1.0.5 =
+* Replaced Isotope with Shuffle.js
+* Allow Footer textbox to use HTML allowed tags.
+* Fixed Woocommerce 2.1 product list class
 
 
 Theme Demo

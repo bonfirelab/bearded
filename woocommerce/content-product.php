@@ -34,6 +34,8 @@ if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 
 	$classes[] = 'first';
 if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	$classes[] = 'last';
+
+$classes[] = 'hentry';
 ?>
 <li <?php post_class( $classes ); ?>>
 

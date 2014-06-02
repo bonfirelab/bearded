@@ -3,7 +3,7 @@ Theme Name: Bearded
 Theme URI: http://bonfirelab.com/themes/bearded
 Author: Hermanto Lim
 Author URI: A responsive CSS3 and HTML5 blogging and portfolio theme.  It supports all post formats and has layout, and color options built into the theme customizer. The theme also supports the <a href="http://wordpress.org/extend/plugins/custom-content-portfolio">Custom Content Portfolio</a> plugin, giving artists and other creative people the ability to share their work.
-Version: 0.1.2
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-colors, custom-menu, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, orange, black, one-column, two-columns, left-sidebar, right-sidebar, flexible-width
@@ -87,4 +87,9 @@ To use the slider.
 
 = 1.0.4 =
 * Fixed Sidebar Issue when Woocommerce not installed
+
+= 1.0.5 =
+* Replaced Isotope with Shuffle.js
+* Allow Footer textbox to use HTML allowed tags.
+* Fixed Woocommerce 2.1 product list class
 

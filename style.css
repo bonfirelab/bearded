@@ -3,7 +3,7 @@
  * Theme URI: http://bonfirelab.com/themes/bearded
  * Description: A responsive CSS3 and HTML5 blogging, ecommerce and portfolio theme.  It supports all post formats and has layout, and color options built into the theme customizer. The theme also supports the <a href="http://wordpress.org/extend/plugins/custom-content-portfolio">Custom Content Portfolio</a> and <a href="http://wordpress.org/extend/plugins/woocommerce">Woocommerce</a> plugin, giving artists and other creative people the ability to share their work.
  * Tags: custom-background, custom-colors, custom-menu, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, orange, black, one-column, two-columns, left-sidebar, right-sidebar, fluid-layout
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Hermanto Lim
  * Author URI: http://bonfirelab.com
  * License: GNU General Public License v2.0
@@ -2216,8 +2216,6 @@ table {
   max-width: 94%; }
 
 .main-wrapper {
-  /*! just for fun */
-  box-shadow: 0px 0px 0 #e2e5e5,1px 1px 0 #e2e5e5,2px 2px 0 #e2e5e5,3px 3px 0 #e2e5e5,4px 4px 0 #e2e5e5,5px 5px 0 #e2e5e5,6px 6px 0 #e2e5e5,7px 7px 0 #e2e5e5,8px 8px 0 #e2e5e5,9px 9px 0 #e2e5e5,10px 10px 0 #e2e5e5,11px 11px 0 #e2e5e5,12px 12px 0 #e2e5e5,13px 13px 0 #e2e5e5,14px 14px 0 #e2e5e5,15px 15px 0 #e2e5e5,16px 16px 0 #e2e5e5,17px 17px 0 #e2e5e5,18px 18px 0 #e2e5e5,19px 19px 0 #e2e5e5,20px 20px 0 #e2e5e5,21px 21px 0 #e2e5e5,22px 22px 0 #e2e5e5,23px 23px 0 #e2e5e5,24px 24px 0 #e2e5e5,25px 25px 0 #e2e5e5,26px 26px 0 #e2e5e5,27px 27px 0 #e2e5e5,28px 28px 0 #e2e5e5,29px 29px 0 #e2e5e5,30px 30px 0 #e2e5e5,31px 31px 0 #e2e5e5,32px 32px 0 #e2e5e5,33px 33px 0 #e2e5e5,34px 34px 0 #e2e5e5,35px 35px 0 #e2e5e5,36px 36px 0 #e2e5e5,37px 37px 0 #e2e5e5,38px 38px 0 #e2e5e5,39px 39px 0 #e2e5e5,40px 40px 0 #e2e5e5,41px 41px 0 #e2e5e5,42px 42px 0 #e2e5e5,43px 43px 0 #e2e5e5,44px 44px 0 #e2e5e5,45px 45px 0 #e2e5e5,46px 46px 0 #e2e5e5,47px 47px 0 #e2e5e5,48px 48px 0 #e2e5e5,49px 49px 0 #e2e5e5,50px 50px 0 #e2e5e5,51px 51px 0 #e2e5e5,52px 52px 0 #e2e5e5,53px 53px 0 #e2e5e5,54px 54px 0 #e2e5e5,55px 55px 0 #e2e5e5,56px 56px 0 #e2e5e5,57px 57px 0 #e2e5e5,58px 58px 0 #e2e5e5,59px 59px 0 #e2e5e5,60px 60px 0 #e2e5e5,61px 61px 0 #e2e5e5,62px 62px 0 #e2e5e5,63px 63px 0 #e2e5e5,64px 64px 0 #e2e5e5,65px 65px 0 #e2e5e5,66px 66px 0 #e2e5e5,67px 67px 0 #e2e5e5,68px 68px 0 #e2e5e5,69px 69px 0 #e2e5e5,70px 70px 0 #e2e5e5,71px 71px 0 #e2e5e5,72px 72px 0 #e2e5e5,73px 73px 0 #e2e5e5,74px 74px 0 #e2e5e5,75px 75px 0 #e2e5e5,76px 76px 0 #e2e5e5,77px 77px 0 #e2e5e5,78px 78px 0 #e2e5e5,79px 79px 0 #e2e5e5,80px 80px 0 #e2e5e5,81px 81px 0 #e2e5e5,82px 82px 0 #e2e5e5,83px 83px 0 #e2e5e5,84px 84px 0 #e2e5e5,85px 85px 0 #e2e5e5,86px 86px 0 #e2e5e5,87px 87px 0 #e2e5e5,88px 88px 0 #e2e5e5,89px 89px 0 #e2e5e5,90px 90px 0 #e2e5e5,91px 91px 0 #e2e5e5,92px 92px 0 #e2e5e5,93px 93px 0 #e2e5e5,94px 94px 0 #e2e5e5,95px 95px 0 #e2e5e5,96px 96px 0 #e2e5e5,97px 97px 0 #e2e5e5,98px 98px 0 #e2e5e5,99px 99px 0 #e2e5e5,100px 100px 0 #e2e5e5,101px 101px 0 #e2e5e5,102px 102px 0 #e2e5e5,103px 103px 0 #e2e5e5,104px 104px 0 #e2e5e5,105px 105px 0 #e2e5e5,106px 106px 0 #e2e5e5,107px 107px 0 #e2e5e5,108px 108px 0 #e2e5e5,109px 109px 0 #e2e5e5,110px 110px 0 #e2e5e5,111px 111px 0 #e2e5e5,112px 112px 0 #e2e5e5,113px 113px 0 #e2e5e5,114px 114px 0 #e2e5e5,115px 115px 0 #e2e5e5,116px 116px 0 #e2e5e5,117px 117px 0 #e2e5e5,118px 118px 0 #e2e5e5,119px 119px 0 #e2e5e5,120px 120px 0 #e2e5e5,121px 121px 0 #e2e5e5,122px 122px 0 #e2e5e5,123px 123px 0 #e2e5e5,124px 124px 0 #e2e5e5,125px 125px 0 #e2e5e5,126px 126px 0 #e2e5e5,127px 127px 0 #e2e5e5,128px 128px 0 #e2e5e5,129px 129px 0 #e2e5e5,130px 130px 0 #e2e5e5,131px 131px 0 #e2e5e5,132px 132px 0 #e2e5e5,133px 133px 0 #e2e5e5,134px 134px 0 #e2e5e5,135px 135px 0 #e2e5e5,136px 136px 0 #e2e5e5,137px 137px 0 #e2e5e5,138px 138px 0 #e2e5e5,139px 139px 0 #e2e5e5,140px 140px 0 #e2e5e5,141px 141px 0 #e2e5e5,142px 142px 0 #e2e5e5,143px 143px 0 #e2e5e5,144px 144px 0 #e2e5e5,145px 145px 0 #e2e5e5,146px 146px 0 #e2e5e5,147px 147px 0 #e2e5e5,148px 148px 0 #e2e5e5,150px 150px 0 rgba(0, 0, 0, 0);
   backface-visibility: hidden;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -2970,6 +2968,66 @@ img.alignnone {
       border: 1px solid #f47e00;
       /*THEME_COLOR*/ }
 
+/* =Price Filter Widget
+	-------------------------------------------------------------- */
+.widget_price_filter .price_slider {
+  margin-bottom: 1em; }
+.widget_price_filter .price_slider_amount {
+  text-align: right;
+  line-height: 2.4em;
+  font-size: 1em; }
+  .widget_price_filter .price_slider_amount .button {
+    font-size: .8125em;
+    padding: 0.75em 1.5em;
+    float: left; }
+.widget_price_filter .ui-slider {
+  position: relative;
+  text-align: left; }
+.widget_price_filter .ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.4em;
+  height: 1.4em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #222;
+  outline: none;
+  top: -.3em; }
+  .widget_price_filter .ui-slider .ui-slider-handle:last-child {
+    margin-left: -1em; }
+.widget_price_filter .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background: #00b4ff;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em; }
+.widget_price_filter .price_slider_wrapper .ui-widget-content {
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  background-color: #ececec; }
+.widget_price_filter .ui-slider-horizontal {
+  height: .8em; }
+.widget_price_filter .ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%; }
+.widget_price_filter .ui-slider-horizontal .ui-slider-range-min {
+  left: -1px; }
+.widget_price_filter .ui-slider-horizontal .ui-slider-range-max {
+  right: -1px; }
+
 /**
  * Comments Template
  * --------------------------------------------------------------------------- */
@@ -3487,61 +3545,21 @@ blockquote {
     .page-template-portfolio-4 .portfolio-entry-title a:hover, .page-template-portfolio-3 .portfolio-entry-title a:hover {
       color: #f47e00; }
 
-/* Start: Recommended Isotope styles */
-/**** Isotope Filtering ****/
-.isotope-item {
-  z-index: 2; }
+/*
+Shuffle needs either relative or absolute positioning on the container
+It will set it for you, but it'll cause another style recalculation and layout.
+AKA worse performance - so just set it here
+*/
+#portfolio-shuffle {
+  position: relative;
+  overflow: hidden; }
 
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1; }
+.shuffle__sizer {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden; }
 
-/**** Isotope CSS3 transitions ****/
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -ms-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s; }
-
-.isotope {
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
-  -o-transition-property: height, width;
-  transition-property: height, width; }
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
-  -ms-transition-property: -ms-transform, opacity;
-  -o-transition-property: -o-transform, opacity;
-  transition-property: transform, opacity; }
-
-/**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s; }
-
-/* End: Recommended Isotope styles */
-/* disable CSS transitions for containers with infinite scrolling*/
-.isotope.infinite-scrolling {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
-  transition: none; }
-
-.isotope-item {
-  margin-bottom: 1.875em; }
-
-#isotope-filters {
+#shuffle-filters {
   text-transform: uppercase;
   font-size: 1em;
   text-align: center;
@@ -3549,18 +3567,19 @@ blockquote {
   border-top: 1px solid #f3f3f3;
   border-bottom: 1px solid #f3f3f3; }
 
-#isotope-filters li + li:before {
+#shuffle-filters li + li:before {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   content: "/";
   padding-right: 0.7em;
   color: #ccc; }
 
-#isotope-filters li {
+#shuffle-filters li {
   padding: 0 0.35714em;
   display: inline-block; }
-  #isotope-filters li a {
-    color: #27313d; }
-    #isotope-filters li a:hover, #isotope-filters li a.active {
+  #shuffle-filters li a {
+    color: #27313d;
+    outline: none; }
+    #shuffle-filters li a:hover, #shuffle-filters li a.active {
       color: #f47e00; }
 
 .woocommerce-cart .hentry, .woocommerce-checkout .hentry, .woocommerce-account .hentry {
@@ -3755,14 +3774,14 @@ ul.products .hentry {
     right: 0;
     bottom: 0;
     margin: 0;
-    line-height: 1.142857142857143;
+    line-height: 1;
     max-width: 50px;
     width: 50px; }
     ul.products .hentry .yith-wcwl-add-to-wishlist .yith-wcwl-add-button {
       position: relative; }
     ul.products .hentry .yith-wcwl-add-to-wishlist a {
       display: block;
-      padding: 1em 1.2em;
+      line-height: 45px;
       color: white;
       background-color: #27313d; }
       ul.products .hentry .yith-wcwl-add-to-wishlist a:hover, ul.products .hentry .yith-wcwl-add-to-wishlist a:focus {
@@ -3783,6 +3802,7 @@ ul.products .hentry {
     margin-top: .7142857142857143em;
     text-align: right; }
   ul.products .hentry .product-actions {
+    height: 45px;
     position: relative;
     background-color: #27313d; }
 
@@ -4210,6 +4230,7 @@ li.product .onsale, .singular-product li.product .onsale {
 
 form.cart {
   float: left;
+  display: inline-block;
   margin: 0 1em 1em 0; }
   form.cart.variations_form.cart {
     float: none;
@@ -4254,9 +4275,14 @@ form.cart {
   border: none;
   text-align: center;
   background-color: transparent;
+  -moz-appearance: textfield;
   border-left: 1px solid rgba(0, 0, 0, 0.1); }
   .input-text.qty:focus {
     border-left-color: rgba(0, 0, 0, 0.2); }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
 
 .quantity.buttons_added {
   position: relative;
@@ -4299,7 +4325,8 @@ td.product-quantity .quantity.buttons_added input {
     margin-right: .5em; }
 
 .single_add_to_cart_button {
-  display: inline-block; }
+  display: inline-block;
+  float: right; }
 
 .woocommerce-tabs {
   margin-top: 2em; }

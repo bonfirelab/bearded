@@ -55,8 +55,8 @@
 
 			this.setTip();
 
-			if( $('#portfolio-isotope').length > 0 ) {
-				this.setIsotope();
+			if( $('#portfolio-shuffle').length > 0 ) {
+				this.setShuffle();
 			}
 
 			if ( $('.bearded-gallery-carousel').length > 0 ) {
@@ -100,113 +100,39 @@
 				customSelector: "iframe[src^='http://blip.tv']"
 			});
 		},
-		setIsotope: function() {
-			// cache container
-			var $container = $('#portfolio-isotope');
-			var $filter = $('#isotope-filters a');
-			// Vars
+		setShuffle: function(){
+			var $grid = $('#portfolio-shuffle');
+			var $filter = $('#shuffle-filters a');
+			var $sizer = $grid.find('.shuffle__sizer');
+			var group_filters = [];
 
-				// Needed functions
-				var getColWidth4 = function() {
-					var width,
-						windowWidth = $(window).width();
-					
-					if( windowWidth <= 480 ) {
-						width = Math.floor( $container.width() );
-					} else if( windowWidth <= 768 ) {
-						width = Math.floor( $container.width() / 2 );
-					} else {
-						width = Math.floor( $container.width() / 4 );
-					}
+			$grid.shuffle({
+				speed: 350,
+				itemSelector: '.shuffle-elem',
+				sizer: $sizer
+			});
 
-					return width;
-				}
+			// colors
+		    $filter.on('click', function (e) {
 
-				var getColWidth3 = function() {
-					var width,
-						windowWidth = $(window).width();
-					
-					if( windowWidth <= 480 ) {
-						width = Math.floor( $container.width() );
-					} else if( windowWidth <= 768 ) {
-						width = Math.floor( $container.width() / 2 );
-					} else {
-						width = Math.floor( $container.width() / 3 );
-					}
+		    	// prevent default click
+				e.preventDefault();
 
-					return width;
-				}
+		        var selector = $(this).attr('data-filter');
 
-				function setWidths( col ) {
-					if( col == 4) {
-						var colWidth = getColWidth4();
-						$container.children().css({ width: colWidth });
-					} else {
-						var colWidth = getColWidth3();
-						$container.children().css({ width: colWidth });
-					}
-				}
+				// update filter class
+				$filter.removeClass('active');
+				$(this).addClass('active');
 
-				if($('.portfolio-4-columns').length > 0) {
-					setWidths(4);
-
-					$container.imagesLoaded( function() {
-						$container.isotope({
-							resizable: false,
-							masonry: {
-								columnWidth: getColWidth4()
-							}
-						});
-					});
-
-					$(window).smartresize(function() {
-						setWidths();
-						$container.isotope({
-							masonry: {
-								columnWidth: getColWidth4()
-							}
-						});
-						
-					});
-
-				} else {
-					setWidths(3);
-					$container.imagesLoaded( function() {
-						$container.isotope({
-							resizable: false,
-							masonry: {
-								columnWidth: getColWidth3()
-							}
-						});
-					});
-
-					$(window).smartresize(function() {
-						setWidths();
-						$container.isotope({
-							masonry: {
-								columnWidth: getColWidth3()
-							}
-						});
-						
-					});
-				}
-
+				var groupName = $(this).attr('data-filter');
+			    // reshuffle grid
+			    $grid.shuffle('shuffle', groupName );
 				
-				$filter.click(function(e) {
-					
-					// do the filter
-					var selector = $(this).attr('data-filter');
-					$container.isotope({ filter: '.' + selector });
-
-					// update filter class
-					$filter.removeClass('active');
-					$(this).addClass('active');
-
-					// prevent default click
-					e.preventDefault();
-					return false;
-				});
+				//return false;
+		    });
 		},
+		
+	
 		setTip: function(){
 			$('.bearded-tip').each(function( event ){
 

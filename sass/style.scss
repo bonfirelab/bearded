@@ -33,8 +33,6 @@
 	max-width: 94%;
 }
 .main-wrapper {
-	/*! just for fun */
-	@include long-shadow(box, #e2e5e5, 150, false, false );
 	backface-visibility: hidden;
 	transform-style: preserve-3d; 
 	-webkit-transform-style: preserve-3d; 
@@ -919,6 +917,68 @@ img.alignnone {
 	}
 }
 
+/* =Price Filter Widget
+	-------------------------------------------------------------- */
+
+.widget_price_filter {
+	.price_slider {
+		margin-bottom: 1em;
+	}
+	.price_slider_amount {
+		text-align: right;
+		line-height: 2.4em;
+		font-size: 1em;
+		.button {
+			font-size: .8125em;
+			padding: 0.75em 1.5em;
+			float: left;
+		}
+	}
+	.ui-slider {
+		position: relative;
+		text-align:left;
+	}
+	.ui-slider .ui-slider-handle {
+		position:absolute;
+		z-index: 2;
+		width: 1.4em;
+		height: 1.4em;
+		@include border-radius(3px);
+		cursor: pointer;
+		background-color: #222;
+		outline:none;
+		top: -.3em;
+		&:last-child {
+			margin-left: -1em;
+		}
+	}
+	.ui-slider .ui-slider-range {
+		position:absolute;
+		z-index: 1;
+		font-size: .7em;
+		display:block;
+		border: 0;
+		background: $blue;
+		@include border-radius(2em);
+	}
+	.price_slider_wrapper .ui-widget-content {
+		@include border-radius(2em);
+		background-color: #ececec;
+	}
+	.ui-slider-horizontal {
+		height: .8em;
+	}
+	.ui-slider-horizontal .ui-slider-range {
+		top: 0;
+		height: 100%;
+	}
+	.ui-slider-horizontal .ui-slider-range-min {
+		left: -1px;
+	}
+	.ui-slider-horizontal .ui-slider-range-max {
+		right: -1px;
+	}
+}
 	
 
 
@@ -1551,77 +1611,24 @@ blockquote {
 	}
 }
 
-
-/* Start: Recommended Isotope styles */
-
-/**** Isotope Filtering ****/
-
-.isotope-item {
-  z-index: 2;
+/*
+Shuffle needs either relative or absolute positioning on the container
+It will set it for you, but it'll cause another style recalculation and layout.
+AKA worse performance - so just set it here
+*/
+#portfolio-shuffle {
+  position: relative;
+  overflow: hidden;
 }
 
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
+.shuffle__sizer {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
 }
 
-/**** Isotope CSS3 transitions ****/
 
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
-}
-
-/**** disabling Isotope CSS3 transitions ****/
-
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
-}
-
-/* End: Recommended Isotope styles */
-
-
-
-/* disable CSS transitions for containers with infinite scrolling*/
-.isotope.infinite-scrolling {
-  -webkit-transition: none;
-     -moz-transition: none;
-      -ms-transition: none;
-       -o-transition: none;
-          transition: none;
-}
-
-.isotope-item {
-  margin-bottom: 1.875em;
-}
-
-#isotope-filters {
+#shuffle-filters {
   text-transform: uppercase;
   font-size: 1em;
   text-align: center;
@@ -1629,17 +1636,18 @@ blockquote {
   border-top: 1px solid #f3f3f3;
   border-bottom: 1px solid #f3f3f3;
 }
-#isotope-filters li + li:before {
+#shuffle-filters li + li:before {
   font-family: $body-font-family;
   content: "/";
   padding-right: 0.7em;
   color: #ccc;
 }
-#isotope-filters li {
+#shuffle-filters li {
   padding: 0 0.35714em;
   display: inline-block;
   a {
   	color: $body-font-color;
+  	outline: none;
   	&:hover, &.active {
   		color: $theme-color;
   	}
@@ -1844,7 +1852,7 @@ ul.products .hentry {
 	    right: 0;
 	    bottom: 0;
 	    margin: 0;
-	    line-height: 1.142857142857143;
+	    line-height: 1;
 	    max-width: 50px;
 	    width: 50px;
 	    .yith-wcwl-add-button  {
@@ -1852,7 +1860,8 @@ ul.products .hentry {
 	    }
 	    a {
 	    	display: block;
-	    	padding: 1em 1.2em;
+	    	//padding: 1em 1.2em;
+	    	line-height: 45px;
 	    	color: white;
 	    	background-color: $body-font-color;
 	    	&:hover, &:focus {
@@ -1885,6 +1894,7 @@ ul.products .hentry {
 		text-align: right;
 	}
 	.product-actions {
+		height: 45px;
 		position: relative;
 		background-color: $body-font-color;
 	}
@@ -2346,6 +2356,7 @@ li.product .onsale, .singular-product li.product .onsale {
 
 form.cart {
 	float: left;
+	display: inline-block;
 	margin: 0 1em 1em 0;
 	&.variations_form.cart {
 		float: none;
@@ -2404,10 +2415,16 @@ form.cart {
 	border: none;
 	text-align: center;
 	background-color: transparent;
+	-moz-appearance:textfield;
 	border-left: 1px solid rgba(0,0,0,.1);
 	&:focus {
 		border-left-color: rgba(0,0,0,.2);
 	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 .quantity.buttons_added {
 	position: relative;
@@ -2459,6 +2476,7 @@ td.product-quantity {
 }
 .single_add_to_cart_button {
 	display: inline-block;
+	float: right;
 }
 .woocommerce-tabs {
 	margin-top: 2em;
