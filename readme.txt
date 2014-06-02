@@ -27,7 +27,7 @@ Unless otherwise specified, all the theme files, scripts and images
 are licensed under GNU General Public License version 2, see file license.txt.
 The exceptions to this license are as follows:
 * The script modernizr.js is licensed under MIT
-* The script jquery.isotope.min.js is licensed under MIT for open source project
+* The script jquery.shuffle.min.js is licensed under MIT for open source project
 * The script imagesloaded.js is licensed under MIT
 * The script jquery.fitvids.js is licensed under WTFPL
 * The Fonts for FontAwesome by Dave Gandy - http://fontawesome.io is licensed under SIL OFL 1.1
