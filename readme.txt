@@ -38,8 +38,8 @@ The exceptions to this license are as follows:
 About the theme in the following link.
 http://www.bonfirelab.com/themes/bearded
 
-You can drop your queries in our contact form in the following link.
-http://www.bonfirelab.com/contact/
+Documentation and Support
+https://github.com/bonfirelab/bearded
 
 == Additional Notes ==
 
