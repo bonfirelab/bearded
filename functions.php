@@ -1188,4 +1188,78 @@ require_once( BEARDED_INC . 'widgets/widget-home-clients.php');
 require_once( BEARDED_INC . 'widgets/widget-home-posts.php');
 require_once( BEARDED_INC . 'widgets/widget-home-services.php');
 require_once( BEARDED_INC . 'class-nav-menu.php');
+require_once( BEARDED_INC . 'class-tgm-plugin-activation.php');
+
+
+add_action( 'tgmpa_register', 'bearded_register_required_plugins' );
+/**
+ * Register the required plugins for this theme.
+ *
+ * In this example, we register two plugins - one included with the TGMPA library
+ * and one from the .org repo.
+ *
+ * The variable passed to tgmpa_register_plugins() should be an array of plugin
+ * arrays.
+ *
+ * This function is hooked into tgmpa_init, which is fired within the
+ * TGM_Plugin_Activation class constructor.
+ */
+function bearded_register_required_plugins() {
+
+    /**
+     * Array of plugin arrays. Required keys are name and slug.
+     * If the source is NOT from the .org repo, then source is also required.
+     */
+    $plugins = array(
+
+       
+        array(
+			'name' 		=> 'Animate Slider',
+			'slug' 		=> 'animate-slider',
+			'required' 	=> false,
+		),
+		
+        array(
+			'name' 		=> 'WooCommerce - excelling eCommerce',
+			'slug' 		=> 'woocommerce',
+			'required' 	=> false,
+		),
+
+		array(
+			'name' 		=> 'YITH WooCommerce Wishlist',
+			'slug' 		=> 'yith-woocommerce-wishlist',
+			'required' 	=> false,
+		),
+
+		array(
+			'name' 		=> 'Custom Content Portfolio',
+			'slug' 		=> 'custom-content-portfolio',
+			'required' 	=> false,
+		),
+
+    );
+
+    /**
+     * Array of configuration settings. Amend each line as needed.
+     * If you want the default strings to be available under your own theme domain,
+     * leave the strings uncommented.
+     * Some of the strings are added into a sprintf, so see the comments at the
+     * end of each line for what each argument will be.
+     */
+    $config = array(
+        'id'           => 'bearded',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+        'default_path' => '',                      // Default absolute path to pre-packaged plugins.
+        'parent_menu_slug' 	=> 'themes.php', 				// Default parent menu slug
+		'parent_url_slug' 	=> 'themes.php', 				// Default parent URL slug
+		'menu'         		=> 'install-required-plugins', 	// Menu slug
+		'has_notices'  => true,                    // Show admin notices or not.
+        'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+        'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+        'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+        'message'      => '',                      // Message to output right before the plugins table.
+    );
+
+    tgmpa( $plugins, $config );
+
+}
 ?>

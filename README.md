@@ -84,6 +84,10 @@ Changelog
 * Allow Footer textbox to use HTML allowed tags.
 * Fixed Woocommerce 2.1 product list class
 
+= 1.0.6 =
+* Added TGM Plugin Activation Library
+
+
 
 Theme Demo
 ==========
