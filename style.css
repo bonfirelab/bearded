@@ -4694,7 +4694,10 @@ td.product-remove, td.product-thumbnail, td.product-price, th.product-remove, th
   width: 100%;
   left: 0; }
   #navigation.stuck .shop-nav {
-    width: 100%; }
+    width: 100%;
+    margin-left: -39px;
+    padding-left: 39px;
+    float: left; }
     #navigation.stuck .shop-nav ul.cart > li > a, #navigation.stuck .shop-nav ul.account-menu > li > a {
       -webkit-border-radius: 0;
       border-radius: 0; }
@@ -4705,7 +4708,10 @@ td.product-remove, td.product-thumbnail, td.product-price, th.product-remove, th
         -webkit-border-radius: 0;
         border-radius: 0; }
   #navigation.stuck #menu-primary {
-    display: none; }
+    width: 39px; }
+    #navigation.stuck #menu-primary #menu-toggle {
+      -webkit-border-radius: 0;
+      border-radius: 0; }
 
 .admin-bar #navigation.stuck {
   top: 32px; }

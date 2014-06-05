@@ -2839,6 +2839,9 @@ td.product-remove, td.product-thumbnail, td.product-price, th.product-remove, th
 	left: 0;
 	.shop-nav {
 		width: 100%;
+		margin-left: -39px;
+		padding-left: 39px;
+		float: left;
 		ul.cart, ul.account-menu {
 			> li {
 				> a {
@@ -2858,7 +2861,10 @@ td.product-remove, td.product-thumbnail, td.product-price, th.product-remove, th
 		}
 	}
 	#menu-primary {
-		display: none;
+		width: 39px;
+		#menu-toggle {
+			@include radius( 0 );
+		}
 	}
 }
 .admin-bar #navigation.stuck {
