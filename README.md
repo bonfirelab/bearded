@@ -16,21 +16,21 @@ Documentation
 4. [Credits](#credits)
 
 
-<a name="plugin"/>
+<a name="plugin"></a>
 ## Plugin Used in Demo
 1. [Custom Content Portfolio](http://wordpress.org/plugins/custom-content-portfolio/). A simple and amazing plugin created by Justin Tadlock. This plugin used to control the Portfolio post type.
 2. [WooCommerce - excelling eCommerce](http://wordpress.org/plugins/woocommerce/)
 3. [YITH WooCommerce Wishlist](http://wordpress.org/plugins/yith-woocommerce-wishlist/). This plugin used to show add to wishlist feature.
 4. [Animate Slider](http://wordpress.org/plugins/animate-slider/) (*Recommended*). This plugin used to show slideshow in the homepage
 
-<a name="setup-home"/>
+<a name="setup-home"></a>
 ## Set Up the Home Page
 1. Create a blank new page, name it whatever you want and set the page template to **HOME**
 2. Set this page as static front page in Settings > Reading > Static Front Page
 3. To setup the slider in home page make sure you install the [Animate Slider](http://wordpress.org/plugins/animate-slider/), The **Home Page Template** will automatically call any latest post in Slider.
 4. To setup the content for Home Page, Go to Appearance > Widget. Drag an Drop any Bearded Widget there, the Bearded widget is built for home content so you can easily rearrange the content.
 
-<a name="setup-portfolio"/>
+<a name="setup-portfolio"></a>
 ## Portfolio Page Setup
 
 The Portfolio Page Template is powered by [Shuffle jQuery](http://vestride.github.io/Shuffle/) plugin. 
